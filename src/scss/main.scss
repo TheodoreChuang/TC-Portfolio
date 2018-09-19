@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+/************ Universal Styles ************/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: gray;   
+}
+
+////////////* Small Styles - Vertical Project Cards *////////////
+
+/************ WELCOME ************/
+#welcome {
+    h1 {
+        margin: 40% 7% 1.5% 7%;
+        font-family: 'Raleway', sans-serif;
+    }
+    h2 {
+        margin: 1.5% 7% 10% 7%;
+        font-size: 1em;
+    }
+
+    #profile-picture  {
+        img {
+            max-width: 100%;
+            // filter: grayscale(75%)
+        }
+    } 
+}
+
+/************ ABOUT ME ************/
+#about {
+    margin: 15% 7% 15% 7%;
+    // p {}
+
+    #tech-stack {
+        // margin: 5% 7% 5% 7%;
+        display: flex;
+        justify-content: space-evenly;
+        
+        img {
+            width: 10%;
+            height: 10%;
+            padding: 2%;
+        }
+    }
+}
+
+/************ Project Gallery ************/
+#project-gallery {
+    margin: 15% 7% 15% 7%;
+
+    #terminal-app {
+        padding: 20px 5px 5px 5px;
+        background: #1AA03A;
+        color: #FFFFFF;
+
+        .project-title {
+            margin: 0;
+        }
+        .project-snippet {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        // a {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+
+        img {
+            width: 90%;
+        }
+    }
+    
+}
+
+
+
+/************ Footer/Contact ************/
+
+////////////* Large Styles - Horizontal Project Cards *////////////
+@media (min-width: 800px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
