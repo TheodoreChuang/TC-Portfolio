@@ -91,69 +91,54 @@ nav {
 .project-gallery {
     margin: 15% 7%;
   
+    %card-small {
+        margin-bottom: 7%;
+        height: 55vh;
+        padding: 10% 5%;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        border-radius: 2%;
+
+            .project-title {
+                margin: 0;
+            }
+            .project-snippet {
+                margin: 0;
+                padding: 2% 0 20% 0;
+                font-size: 0.9em;
+            }
+            img {
+                padding-left: 5%;
+                width: 90%;
+                margin-bottom: auto;
+            }
+            .project-services {
+                margin: 0;
+                font-size: 0.85em;
+            }
+    }
+
     .terminal-app {
-        margin-bottom: 7%;
-        height: 55vh;
-        padding: 10% 5%;
-        display: flex;
-        flex-direction: column;
+        @extend %card-small;
         background: #1AA03A;
-        color: #FFFFFF;
-        border-radius: 2%;
-
-            .project-title {
-                margin: 0;
-            }
-            .project-snippet {
-                margin: 0;
-                padding: 2% 0 20% 0;
-                font-size: 0.9em;
-            }
-            img {
-                padding-left: 5%;
-                width: 90%;
-            }
-            .project-services {
-                align-self: flex-end;
-                font-size: 0.85em;
-            }
+    }      
+    .saas-blog-mockup {
+        @extend %card-small;
+        background: #FFB900;
     }  
-    
-    .eCommerce-blog-mockup {
-        margin-bottom: 7%;
-        height: 55vh;
-        padding: 10% 5%;
-        display: flex;
-        flex-direction: column;
-        background: #64D0C0;;
-        color: #FFFFFF;
-        border-radius: 2%;
-
-            .project-title {
-                margin: 0;
-            }
-            .project-snippet {
-                margin: 0;
-                padding: 2% 0 20% 0;
-                font-size: 0.9em;
-            }
-            img {
-                padding-left: 5%;
-                width: 90%;
-            }
-            .project-services {
-                align-self: flex-end;
-                font-size: 0.85em;
-            }
+    .yelpcamp {
+        @extend %card-small;
+        background: #64D0C0;
     }  
 }
 
 /************ Footer / Contacts - Small Screen ************/
 footer {
-    margin: 15% 7%;
+    margin: 60px 7% 40px 7%;
 
     .social-contacts {
-        padding: 5% 0;
+        padding: 20px 0;
         display: flex;
         justify-content: space-evenly;
         
@@ -164,20 +149,18 @@ footer {
         }
     }
     .fine-print {
-        margin: 15% 0;
         text-align: center;
         font-size: 0.9em;
         font-family: 'Raleway', sans-serif;
         color: gray;  
     }
-
 }
 ////////////////* end -Small Styles  */////////////////
 
 ///////////////////////////////////////////////////////
 ///////////////////* Large Styles *////////////////////
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
 /************ WELCOME - Large Screen ************/
 .page {
     height: 90vh;
@@ -215,21 +198,21 @@ footer {
 
 /************ Nav Bar - Large Screen ************/
 nav {
-    position: sticky;
+    // position: sticky;
 
     height: 0px;
-    background-color: #FFFFFF;
+    // background-color: #FFFFFF;
     border: none;
 
-    .logo {
-        float: left;
-        padding: 2%;
-    }
+    // .logo {
+    //     float: left;
+    //     padding: 2%;
+    // }
 
-    .nav {
-        float: right;
-        padding: 2%;
-    }
+    // .nav {
+    //     float: right;
+    //     padding: 2%;
+    // }
 } 
 
 /************ ABOUT ME - Large Screen ************/
@@ -249,8 +232,64 @@ nav {
     }
   }
     
+/************ Project Gallery - Large Screen ************/
+.project-gallery {
+    margin: 15% 7%;
+  
+    %card-large {
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "left-top right"
+            "left-middle right"
+            "left-bottom right";
 
+            .project-title {
+                grid-area: left-top;
+                align-self: end;
+                font-size: 2.5em;
+            }
+            .project-snippet {
+                grid-area: left-middle;
+                font-size: 1em;
+                padding: 0%;
+            }
+            img {
+                grid-area: right;
+                justify-self: end;
+                align-self: right;
+                // padding-top: 15%;
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+            }
+            .project-services {
+                grid-area: left-bottom;
+                align-self: end;
+            }
+    }
 
+    .terminal-app {
+        @extend %card-large;
+    }      
+    .saas-blog-mockup {
+        @extend %card-large;
+    }  
+    .yelpcamp {
+        @extend %card-large;
+    }  
+}
+
+/************ Footer / Contacts - Large Screen ************/
+footer {
+    .social-contacts {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 
 }
 /////////////////* end Large Styles *//////////////////
