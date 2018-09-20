@@ -3,40 +3,32 @@
 body {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif; }
 
 h3 {
   margin: 0 0 1em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.9em;
   text-transform: uppercase;
-  color: gray;
-}
+  color: gray; }
 
 p {
-  line-height: 1.75em;
-}
+  line-height: 1.75em; }
 
 a, a:visited {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /************ WELCOME - Small Screen ************/
 .welcome h1 {
   margin: 40% 7% 1.5% 7%;
-  font-family: "Raleway", sans-serif;
-}
+  font-family: 'Raleway', sans-serif; }
 .welcome h2 {
   margin: 1.5% 7% 10% 7%;
-  font-size: 1em;
-}
+  font-size: 1em; }
 .welcome .profile-picture-small img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 .welcome .social-contacts-header {
-  display: none;
-}
+  display: none; }
 
 /************ Nav Bar - Small Screen ************/
 nav {
@@ -45,188 +37,148 @@ nav {
   width: 100%;
   height: 40px;
   background-color: #FFFFFF;
-  border-bottom: 1px solid black;
-}
-nav .logo {
-  float: left;
-  padding: 10px;
-}
-nav .nav {
-  float: right;
-  padding: 10px;
-}
+  border-bottom: 1px solid black; }
+  nav .logo {
+    float: left;
+    padding: 10px; }
+  nav .nav {
+    float: right;
+    padding: 10px; }
 
 /************ ABOUT ME - Small Screen ************/
 .about {
-  margin: 15% 7%;
-}
-.about .profile-picture-large {
-  display: none;
-}
-.about .tech-stack {
-  display: flex;
-  justify-content: space-evenly;
-}
-.about .tech-stack img {
-  width: 10%;
-  height: 10%;
-  padding: 2%;
-}
+  margin: 15% 7%; }
+  .about .profile-picture-large {
+    display: none; }
+  .about .tech-stack {
+    display: flex;
+    justify-content: space-evenly; }
+    .about .tech-stack img {
+      width: 10%;
+      height: 10%;
+      padding: 2%; }
 
 /************ Project Gallery - Small Screen ************/
 .project-gallery {
-  margin: 15% 7%;
-}
-.project-gallery .yelpcamp, .project-gallery .saas-blog-mockup, .project-gallery .terminal-app {
-  margin-bottom: 7%;
-  height: 55vh;
-  padding: 10% 5%;
-  display: flex;
-  flex-direction: column;
-  color: #FFFFFF;
-  border-radius: 2%;
-}
-.project-gallery .yelpcamp .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .terminal-app .project-title {
-  margin: 0;
-}
-.project-gallery .yelpcamp .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .terminal-app .project-snippet {
-  margin: 0;
-  padding: 2% 0 20% 0;
-  font-size: 0.9em;
-}
-.project-gallery .yelpcamp img, .project-gallery .saas-blog-mockup img, .project-gallery .terminal-app img {
-  padding-left: 5%;
-  width: 90%;
-  margin-bottom: auto;
-}
-.project-gallery .yelpcamp .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .terminal-app .project-services {
-  margin: 0;
-  font-size: 0.85em;
-}
-.project-gallery .terminal-app {
-  background: #1AA03A;
-}
-.project-gallery .saas-blog-mockup {
-  background: #FFB900;
-}
-.project-gallery .yelpcamp {
-  background: #64D0C0;
-}
+  margin: 15% 7%; }
+  .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+    margin-bottom: 7%;
+    height: 55vh;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    border-radius: 2%; }
+    .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
+      margin: 0; }
+    .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
+      margin: 0;
+      padding: 2% 0 20% 0;
+      font-size: 0.9em; }
+    .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
+      padding-left: 5%;
+      width: 90%;
+      margin-bottom: auto; }
+    .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
+      margin: 0;
+      font-size: 0.85em; }
+  .project-gallery .terminal-app {
+    background: #1AA03A; }
+  .project-gallery .saas-blog-mockup {
+    background: #FFB900; }
+  .project-gallery .yelpcamp {
+    background: #64D0C0; }
 
 /************ Footer / Contacts - Small Screen ************/
 footer {
-  margin: 60px 7% 40px 7%;
-}
-footer .social-contacts {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .social-contacts a img {
-  width: 40px;
-}
-footer .fine-print {
-  text-align: center;
-  font-size: 0.9em;
-  font-family: "Raleway", sans-serif;
-  color: gray;
-}
+  margin: 60px 7% 40px 7%; }
+  footer .social-contacts {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly; }
+    footer .social-contacts a img {
+      width: 40px; }
+  footer .fine-print {
+    text-align: center;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    color: gray; }
 
 @media (min-width: 600px) {
   /************ WELCOME - Large Screen ************/
   .page {
-    height: 90vh;
+    min-height: 90vh;
     margin: 0%;
-    padding: 5% 0 5% 0;
-  }
+    padding: 5% 0 5% 0; }
 
   .welcome {
-    background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80");
-  }
-  .welcome h1 {
-    margin: 25% 0 0 10%;
-    font-size: 4em;
-  }
-  .welcome h2 {
-    margin: 1% 0 2% 11%;
-    font-size: 2em;
-  }
-  .welcome .profile-picture-small {
-    display: none;
-  }
-  .welcome .social-contacts-header {
-    margin: 0 0 0 11%;
-    display: block;
-  }
-  .welcome .social-contacts-header a {
-    padding: 2%;
-  }
-  .welcome .social-contacts-header a img {
-    width: 30px;
-  }
+    background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80"); }
+    .welcome h1 {
+      margin: 25% 0 0 10%;
+      font-size: 4em; }
+    .welcome h2 {
+      margin: 1% 0 2% 11%;
+      font-size: 2em; }
+    .welcome .profile-picture-small {
+      display: none; }
+    .welcome .social-contacts-header {
+      margin: 0 0 0 11%;
+      display: block; }
+      .welcome .social-contacts-header a {
+        padding: 2%; }
+        .welcome .social-contacts-header a img {
+          width: 30px; }
 
   /************ Nav Bar - Large Screen ************/
   nav {
     height: 0px;
-    border: none;
-  }
+    border: none; }
 
   /************ ABOUT ME - Large Screen ************/
   .about {
     display: flex;
-    align-items: center;
-  }
-  .about .about-desc {
-    max-width: 60%;
-  }
-  .about .about-images {
-    max-width: 40%;
-  }
-  .about .about-images .profile-picture-large {
-    margin: 0 10%;
-    max-width: 80%;
-    display: inline;
-  }
+    align-items: center; }
+    .about .about-desc {
+      max-width: 60%; }
+    .about .about-images {
+      max-width: 40%; }
+      .about .about-images .profile-picture-large {
+        margin: 0 10%;
+        max-width: 80%;
+        display: inline; }
 
   /************ Project Gallery - Large Screen ************/
   .project-gallery {
-    margin: 15% 7%;
-  }
-  .project-gallery .yelpcamp, .project-gallery .saas-blog-mockup, .project-gallery .terminal-app {
-    padding-bottom: 5%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "left-top right" "left-middle right" "left-bottom right";
-  }
-  .project-gallery .yelpcamp .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .terminal-app .project-title {
-    grid-area: left-top;
-    align-self: end;
-    font-size: 2.5em;
-  }
-  .project-gallery .yelpcamp .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .terminal-app .project-snippet {
-    grid-area: left-middle;
-    font-size: 1em;
-    padding: 0%;
-  }
-  .project-gallery .yelpcamp img, .project-gallery .saas-blog-mockup img, .project-gallery .terminal-app img {
-    grid-area: right;
-    justify-self: end;
-    align-self: right;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
-  .project-gallery .yelpcamp .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .terminal-app .project-services {
-    grid-area: left-bottom;
-    align-self: end;
-  }
+    margin: 15% 7%; }
+    .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+      padding-bottom: 5%;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "left-top right" "left-middle right" "left-bottom right"; }
+      .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
+        grid-area: left-top;
+        align-self: end;
+        font-size: 2.5em; }
+      .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
+        grid-area: left-middle;
+        font-size: 1em;
+        padding: 0%; }
+      .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
+        grid-area: right;
+        justify-self: end;
+        align-self: right;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto; }
+      .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
+        grid-area: left-bottom;
+        align-self: end; }
+
   /************ Footer / Contacts - Large Screen ************/
   footer .social-contacts {
     width: 50%;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
