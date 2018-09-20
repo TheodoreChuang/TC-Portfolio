@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
 /************ Universal Styles ************/
 body {
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
 
 h3 {
+  margin: 0 0 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 0.9em;
   text-transform: uppercase;
@@ -57,6 +60,9 @@ nav .nav {
 .about {
   margin: 15% 7%;
 }
+.about .profile-picture-large {
+  display: none;
+}
 .about .tech-stack {
   display: flex;
   justify-content: space-evenly;
@@ -65,9 +71,6 @@ nav .nav {
   width: 10%;
   height: 10%;
   padding: 2%;
-}
-.about .profile-picture-large {
-  display: none;
 }
 
 /************ Project Gallery - Small Screen ************/
@@ -150,26 +153,27 @@ footer .fine-print {
 @media (min-width: 800px) {
   /************ WELCOME - Large Screen ************/
   .page {
-    height: 70vh;
+    height: 90vh;
     margin: 0%;
-    padding: 10%;
+    padding: 5% 0 5% 0;
   }
 
   .welcome {
     background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80");
   }
   .welcome h1 {
-    margin: 25% 0 0 0;
+    margin: 25% 0 0 10%;
     font-size: 4em;
   }
   .welcome h2 {
-    margin: 1% 0 4% 2%;
+    margin: 1% 0 2% 11%;
     font-size: 2em;
   }
   .welcome .profile-picture-small {
     display: none;
   }
   .welcome .social-contacts-header {
+    margin: 0 0 0 11%;
     display: block;
   }
   .welcome .social-contacts-header a {
@@ -196,20 +200,20 @@ footer .fine-print {
   }
 
   /************ ABOUT ME - Large Screen ************/
-  .about .tech-stack {
+  .about {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
   }
-  .about .tech-stack img {
-    width: 10%;
-    height: 10%;
-    padding: 2%;
+  .about .about-desc {
+    max-width: 60%;
   }
-  .about .profile-picture-large {
-    display: block;
+  .about .about-images {
+    max-width: 40%;
   }
-  .about .profile-picture-large img {
-    width: 50%;
+  .about .about-images .profile-picture-large {
+    margin: 0 10%;
+    max-width: 80%;
+    display: inline;
   }
 }
 
