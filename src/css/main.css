@@ -19,21 +19,24 @@ a, a:visited {
   text-decoration: none;
 }
 
-/************ WELCOME ************/
-#welcome h1 {
+/************ WELCOME - Small Screen ************/
+.welcome h1 {
   margin: 40% 7% 1.5% 7%;
   font-family: "Raleway", sans-serif;
 }
-#welcome h2 {
+.welcome h2 {
   margin: 1.5% 7% 10% 7%;
   font-size: 1em;
 }
-#welcome #profile-picture img {
+.welcome .profile-picture-small img {
   max-width: 100%;
 }
+.welcome .social-contacts-header {
+  display: none;
+}
 
-/************ Nav Bar ************/
-header {
+/************ Nav Bar - Small Screen ************/
+nav {
   position: sticky;
   top: -1px;
   width: 100%;
@@ -41,34 +44,37 @@ header {
   background-color: #FFFFFF;
   border-bottom: 1px solid black;
 }
-header #logo {
+nav .logo {
   float: left;
   padding: 10px;
 }
-header #nav {
+nav .nav {
   float: right;
   padding: 10px;
 }
 
-/************ ABOUT ME ************/
-#about {
+/************ ABOUT ME - Small Screen ************/
+.about {
   margin: 15% 7%;
 }
-#about #tech-stack {
+.about .tech-stack {
   display: flex;
   justify-content: space-evenly;
 }
-#about #tech-stack img {
+.about .tech-stack img {
   width: 10%;
   height: 10%;
   padding: 2%;
 }
+.about .profile-picture-large {
+  display: none;
+}
 
-/************ Project Gallery ************/
-#project-gallery {
+/************ Project Gallery - Small Screen ************/
+.project-gallery {
   margin: 15% 7%;
 }
-#project-gallery #terminal-app {
+.project-gallery .terminal-app {
   margin-bottom: 7%;
   height: 55vh;
   padding: 10% 5%;
@@ -78,23 +84,23 @@ header #nav {
   color: #FFFFFF;
   border-radius: 2%;
 }
-#project-gallery #terminal-app .project-title {
+.project-gallery .terminal-app .project-title {
   margin: 0;
 }
-#project-gallery #terminal-app .project-snippet {
+.project-gallery .terminal-app .project-snippet {
   margin: 0;
   padding: 2% 0 20% 0;
   font-size: 0.9em;
 }
-#project-gallery #terminal-app img {
+.project-gallery .terminal-app img {
   padding-left: 5%;
   width: 90%;
 }
-#project-gallery #terminal-app .project-services {
+.project-gallery .terminal-app .project-services {
   align-self: flex-end;
   font-size: 0.85em;
 }
-#project-gallery #zen-garden {
+.project-gallery .eCommerce-blog-mockup {
   margin-bottom: 7%;
   height: 55vh;
   padding: 10% 5%;
@@ -104,33 +110,33 @@ header #nav {
   color: #FFFFFF;
   border-radius: 2%;
 }
-#project-gallery #zen-garden .project-title {
+.project-gallery .eCommerce-blog-mockup .project-title {
   margin: 0;
 }
-#project-gallery #zen-garden .project-snippet {
+.project-gallery .eCommerce-blog-mockup .project-snippet {
   margin: 0;
   padding: 2% 0 20% 0;
   font-size: 0.9em;
 }
-#project-gallery #zen-garden img {
+.project-gallery .eCommerce-blog-mockup img {
   padding-left: 5%;
   width: 90%;
 }
-#project-gallery #zen-garden .project-services {
+.project-gallery .eCommerce-blog-mockup .project-services {
   align-self: flex-end;
   font-size: 0.85em;
 }
 
-/************ Footer / Contacts ************/
+/************ Footer / Contacts - Small Screen ************/
 footer {
   margin: 15% 7%;
 }
-footer #social-contacts {
+footer .social-contacts {
   padding: 5% 0;
   display: flex;
   justify-content: space-evenly;
 }
-footer #social-contacts a img {
+footer .social-contacts a img {
   width: 40px;
 }
 footer .fine-print {
@@ -142,9 +148,68 @@ footer .fine-print {
 }
 
 @media (min-width: 800px) {
-  body {
-    background-color: #B2D6FF;
-    /* Blue */
+  /************ WELCOME - Large Screen ************/
+  .page {
+    height: 70vh;
+    margin: 0%;
+    padding: 10%;
+  }
+
+  .welcome {
+    background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80");
+  }
+  .welcome h1 {
+    margin: 25% 0 0 0;
+    font-size: 4em;
+  }
+  .welcome h2 {
+    margin: 1% 0 4% 2%;
+    font-size: 2em;
+  }
+  .welcome .profile-picture-small {
+    display: none;
+  }
+  .welcome .social-contacts-header {
+    display: block;
+  }
+  .welcome .social-contacts-header a {
+    padding: 2%;
+  }
+  .welcome .social-contacts-header a img {
+    width: 30px;
+  }
+
+  /************ Nav Bar - Large Screen ************/
+  nav {
+    position: sticky;
+    height: 0px;
+    background-color: #FFFFFF;
+    border: none;
+  }
+  nav .logo {
+    float: left;
+    padding: 2%;
+  }
+  nav .nav {
+    float: right;
+    padding: 2%;
+  }
+
+  /************ ABOUT ME - Large Screen ************/
+  .about .tech-stack {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .tech-stack img {
+    width: 10%;
+    height: 10%;
+    padding: 2%;
+  }
+  .about .profile-picture-large {
+    display: block;
+  }
+  .about .profile-picture-large img {
+    width: 50%;
   }
 }
 
