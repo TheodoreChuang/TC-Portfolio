@@ -19,7 +19,7 @@ p {
 }
 a, a:visited {
     text-decoration: none;
-    // color: black;
+    color: black;
 }
 
 
@@ -144,7 +144,7 @@ footer {
 ///////////////////////////////////////////////////////
 ///////////////////* Large Styles *////////////////////
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 /************ WELCOME - Large Screen ************/
 .page {
     min-height: 90vh;
@@ -152,6 +152,8 @@ footer {
     padding: 5% 0 5% 0;
 }
 .welcome {
+    margin: 0%;
+    padding: 5% 0 5% 0;
     // TODO: change to own photos; photo transitions/animations
     background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80");
 

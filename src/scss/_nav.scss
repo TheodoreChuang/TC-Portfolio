@@ -1,24 +1,31 @@
 /************ Nav Bar - Small Screen ************/
-// header {
-//     nav {
-//         position: sticky;
-//         top: -1px;
-//         width: 100%;
-//         height: 40px;
-//         background-color: #FFFFFF;
-//         border-bottom: 1px solid black;
+header {
+        position: sticky;
+        top: -1px;
+        height: 40px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid black;
 
-//         .logo {
-//             float: left;
-//             padding: 10px;
-//         }
+        .logo {
+            float: left;
+            padding: 10px;
+        }
 
-//         .menu-toggle {
-//             float: right;
-//             padding: 10px;
-//         }
-//     }
-// }    
+         /* Hamburger styling */
+        .menu-toggle {
+            float: right;
+            padding: 10px;
+            display: inline-block;
+            line-height: 1em;
+            font-size: 1em;
+            color: #333;
+            
+            :hover,
+            :focus {
+              color: gray;
+            }
+        }
+    
 
 /* Screen reader only */
 .sr-only {
@@ -32,75 +39,63 @@
     border: 0;
   }
   
-  /* Button styling */
-  .menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333;
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color: gray;
-  }
-  
   /*
    Default styles + Mobile first
    Offscreen menu style
   */
   .main-menu {
     position: absolute;
-    left: -200px;
+    right: -210px;
     top: 0;
     height: 100%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    transition: left 0.3s ease,
+    // overflow-y: scroll;
+    // overflow-x: visible;
+    transition: right 0.3s ease,
                 box-shadow 0.3s ease;
     z-index: 999;
-  }
   
-  .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 2.5em 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-            box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    min-height: 100%;
-    width: 200px;
-    background: #1a1a1a;
-  }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 2.5em 0 0;
+        /* Hide shadow w/ -8px while 'closed' */
+        -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+           -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+                box-shadow: -8px 0 8px rgba(0,0,0,.5);
+        min-height: 100%;
+        width: 200px;
+        background: #1a1a1a;
+
+        li:first-child a {
+            border-top: 1px solid #383838;
+          }
+    }
+      
+    a {
+        display: block;
+        padding: .75em 15px;
+        line-height: 1em;
+        font-size: 1em;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #383838;
+    }
+    .menu-close {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+      
+
+}
   
-  .main-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
-  }
   
-  .main-menu li:first-child a {
-    border-top: 1px solid #383838;
-  }
-  
-  .main-menu a:hover,
-  .main-menu a:focus {
+.main-menu a:hover,
+.main-menu a:focus {
     background: #333;
     text-decoration: underline;
-  }
-  
-  .main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
+}  
+
   
   /*
  On small devices, allow it to toggle...
@@ -111,7 +106,7 @@
 */
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
-  left: 0;
+  right: 0;
   outline: none;
   -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
   -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
@@ -138,13 +133,13 @@
   position: absolute;
   display: block;  
   content: "";
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 998;
   background: #000;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
   cursor: default;
 }
 
@@ -156,25 +151,27 @@
   }
 }
 
+}    
 
 /************ Nav Bar - Large Screen ************/
-// Exported to _nav.scss
+@media (min-width: 700px) {
 header {
-    nav {
-        // position: sticky;
+    height: 0px;
+    border: none;
 
-        height: 0px;
-        // background-color: #FFFFFF;
-        border: none;
-
-        // .logo {
-        //     float: left;
-        //     padding: 2%;
-        // }
-
-        // .nav {
-        //     float: right;
-        //     padding: 2%;
-        // }
+    .logo {
+        margin: 1% 0 0 1.5%;
     }
-} 
+    .menu-toggle {
+        margin: 1% 2% 0 0;
+    }
+    .main-menu {
+        right: -32vw;
+
+        ul {
+            width: 30vw;
+        }
+    }
+
+}
+} /************ end Nav Bar - Large Screen ************/
