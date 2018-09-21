@@ -29,12 +29,60 @@
     </div>
 
     <main>
-        <nav>
+        <!-- Navigation Logo and Hamburger Menu -->
+        <header>
             <a class="logo" href="">TC</a>
-            <a class="nav" href="">|||</a>
-        </nav>
+ 
+            <a href="#main-menu"
+            class="menu-toggle"
+            role="button"
+            id="main-menu-toggle"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Open main menu">
+           <span class="sr-only">Open main menu</span>
+           <span aria-hidden="true">☰</span>
+         </a>
 
-    <section class="about">
+         <nav id="main-menu"
+            class="main-menu"
+            role="navigation"
+            aria-expanded="false"
+            aria-label="Main menu">
+        <a href="#main-menu-toggle"
+            class="menu-close"
+            role="button"
+            id="main-menu-close"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span aria-hidden="true">&#x2715;</span>
+        </a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#terminal-app">Terminal App</a></li>
+                <li><a href="#saas-blog-mockup">SaaS Blog</a></li>
+                <li><a href="#yelpcamp">YelpCamp</a></li>
+                <li><a href="#connect">Connect with Me</a></li>
+                <li class="social-contacts">
+                    <a href="https://github.com/TheodoreChuang">
+                        <img src="images/logo-github.svg" alt="Github Logo" /></a>
+                    <a href="https://twitter.com/TheodoreChuang">
+                        <img src="images/logo-twitter.svg" alt="Twitter Logo" /></a>
+                    <a href="https://medium.com/@theodorechuang">
+                        <img src="images/logo-medium.png" alt="Medium Logo`" /></a>
+                    <a href="https://www.linkedin.com/in/theodorechuang/">
+                        <img src="images/logo-linkedin.svg" alt="LinkedIn Logo`" /></a>
+                    <a href="mailto:chuangtheodore@gmail.com"><img src="images/logo-gmail.svg" alt="Email Icon" /></a>
+                </li>
+            </ul>
+        </nav>
+            <a href="#main-menu-toggle" class="backdrop" hidden></a>
+    </header>
+
+    <a name="about"></a>
+    <section class="about page">
         <div class="about-desc">
             <h3 class="about-title">About Me</h3>
             <p class="about-intro">I am a Canadian web development looking for opportunities based in Sydney. Currently I am practicing full stack web development full time at Coder Academy. In my spare time, I frequently hanging out at Meetups at night (JS, Ruby, Blockchain) or soaking in the beautiful scenery during the weekends.</p>
@@ -59,24 +107,27 @@
     <div class="project-gallery">
         <h3>Select Works</h3>
 
-        <a href="#">
+        <a name="terminal-app"></a>
+        <!-- <a href="#"> -->
         <section class="terminal-app page">
             <h4 class="project-title">Get Me The Money</h4>
             <p class="project-snippet">an user friendly, light weight, offline POS for small business</p>
             <img src="images/GetMeMoney-menu_options_screenshot.png" alt="screenshot of terminal app project" />
             <p class="project-services">ruby, design</p>
         </section>
-        </a>
+        <!-- </a> -->
 
-        <a href="#">
+        <a name="saas-blog-mockup"></a>
+        <!-- <a href="#"> -->
         <section class="saas-blog-mockup page">
             <h4 class="project-title">SaaS Blog Mockup</h4>
             <p class="project-snippet">mockup of blog for a SaaS company </p>
             <img src="images/saas-blog-header.png" alt="screenshot of saas blog mockup" />
             <p class="project-services">HTML, CSS</p>
         </section>
-        </a>
+        <!-- </a> -->
 
+        <a name="yelpcamp"></a>
         <a href="https://yelpcamp-tchuang.herokuapp.com/"> 
         <section class="yelpcamp page">
             <h4 class="project-title">Yelp Camp</h4>
@@ -90,6 +141,7 @@
 
     <hr>
 
+    <a name="connect"></a>
     <footer>
         <h3>Hire Me</h3>
         <p>If you think I would be a good fit for your team, drop me a line. Happy to chat anytime.</p>
@@ -115,6 +167,7 @@
 </html>
 
 <!-- Credits -->
+<!-- Menu Bar based on: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 -->
 <!-- HTML
     <div>Icons made by <a href="httsp://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 <!-- CSS 

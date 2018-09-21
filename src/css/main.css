@@ -1,4 +1,147 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+/************ Nav Bar - Small Screen ************/
+header {
+  position: sticky;
+  top: -1px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid black;
+  /* Hamburger styling */
+  /* Screen reader only */
+  /*
+   Default styles + Mobile first
+   Offscreen menu style
+  */
+  /*
+ On small devices, allow it to toggle...
+*/
+  /*
+   :target for non-JavaScript
+   aria-expanded="true/false" will be for JavaScript
+  */
+  /* 
+   We could us `.main-menu:target:after`, but
+   it wouldn't be clickable.
+  */ }
+  header .logo {
+    float: left;
+    padding: 10px; }
+  header .menu-toggle {
+    float: right;
+    padding: 10px;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 1em;
+    color: #333; }
+    header .menu-toggle :hover,
+    header .menu-toggle :focus {
+      color: gray; }
+  header .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  header .main-menu {
+    position: absolute;
+    right: -210px;
+    top: 0;
+    height: 100%;
+    transition: right 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999; }
+    header .main-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 2.5em 0 0;
+      /* Hide shadow w/ -8px while 'closed' */
+      -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+      box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+      min-height: 100%;
+      width: 200px;
+      background: #1a1a1a; }
+      header .main-menu ul li:first-child a {
+        border-top: 1px solid #383838; }
+      header .main-menu ul .social-contacts {
+        display: none;
+        border-bottom: none; }
+    header .main-menu a {
+      display: block;
+      padding: .75em 15px;
+      line-height: 1em;
+      font-size: 1em;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #383838; }
+    header .main-menu .menu-close {
+      position: absolute;
+      left: 0;
+      top: 0; }
+  header .main-menu a:hover,
+  header .main-menu a:focus {
+    background: #333;
+    text-decoration: underline; }
+  header .main-menu:target,
+  header .main-menu[aria-expanded="true"] {
+    right: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25); }
+  header .main-menu:target .menu-close,
+  header .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001; }
+  header .main-menu:target ul,
+  header .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000; }
+  header .main-menu:target + .backdrop,
+  header .main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0, 0, 0, 0.75);
+    cursor: default; }
+  @supports (position: fixed) {
+    header .main-menu,
+    header .main-menu:target + .backdrop,
+    header .main-menu[aria-expanded="true"] + .backdrop {
+      position: fixed; } }
+
+/************ Nav Bar - Large Screen ************/
+@media (min-width: 700px) {
+  header {
+    height: 0px;
+    border: none; }
+    header .logo {
+      margin: 1% 0 0 1.5%; }
+    header .menu-toggle {
+      margin: 1% 2% 0 0; }
+    header .main-menu {
+      right: -32vw; }
+      header .main-menu ul {
+        width: 30vw; }
+        header .main-menu ul .social-contacts {
+          margin-top: 1em;
+          display: flex;
+          justify-content: space-evenly; }
+          header .main-menu ul .social-contacts a {
+            border-bottom: none; }
+            header .main-menu ul .social-contacts a img {
+              width: 30px;
+              filter: grayscale(100%); }
+            header .main-menu ul .social-contacts a :hover {
+              filter: grayscale(0%); } }
+/************ end Nav Bar - Large Screen ************/
 /************ Universal Styles ************/
 body {
   max-width: 1600px;
@@ -16,7 +159,8 @@ p {
   line-height: 1.75em; }
 
 a, a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 /************ WELCOME - Small Screen ************/
 .welcome h1 {
@@ -31,20 +175,6 @@ a, a:visited {
   display: none; }
 
 /************ Nav Bar - Small Screen ************/
-nav {
-  position: sticky;
-  top: -1px;
-  width: 100%;
-  height: 40px;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid black; }
-  nav .logo {
-    float: left;
-    padding: 10px; }
-  nav .nav {
-    float: right;
-    padding: 10px; }
-
 /************ ABOUT ME - Small Screen ************/
 .about {
   margin: 15% 7%; }
@@ -104,7 +234,7 @@ footer {
     font-family: 'Raleway', sans-serif;
     color: gray; }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   /************ WELCOME - Large Screen ************/
   .page {
     height: 90vh;
@@ -112,6 +242,8 @@ footer {
     padding: 5% 0 5% 0; }
 
   .welcome {
+    margin: 0%;
+    padding: 5% 0 5% 0;
     background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80"); }
     .welcome h1 {
       margin: 25% 0 0 10%;
@@ -130,10 +262,6 @@ footer {
           width: 30px; }
 
   /************ Nav Bar - Large Screen ************/
-  nav {
-    height: 0px;
-    border: none; }
-
   /************ ABOUT ME - Large Screen ************/
   .about {
     min-height: 90vh;
