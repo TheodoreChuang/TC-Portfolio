@@ -70,9 +70,23 @@ header {
             border-top: 1px solid #383838;
           }
 
-        .social-contacts {
-            display: none;
-            border-bottom: none;
+          .social-contacts {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            a {
+        
+                border-bottom: none;
+                .img-invert {
+                    width: 30px;   
+                    filter: invert(100%);
+                }
+                .img {
+                    width: 30px;   
+                }
+            }
         }
     }
       

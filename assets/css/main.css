@@ -66,8 +66,18 @@ header {
       header .main-menu ul li:first-child a {
         border-top: 1px solid #383838; }
       header .main-menu ul .social-contacts {
-        display: none;
-        border-bottom: none; }
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+        header .main-menu ul .social-contacts a {
+          border-bottom: none; }
+          header .main-menu ul .social-contacts a .img-invert {
+            width: 30px;
+            filter: invert(100%); }
+          header .main-menu ul .social-contacts a .img {
+            width: 30px; }
     header .main-menu a {
       display: block;
       padding: .75em 15px;
