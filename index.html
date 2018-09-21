@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>TC | Theodore Chuang</title>
+    <title>Theodore Chuang | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 
     <!-- Navigation Logo and Hamburger Menu -->
     <header>
-        <a class="logo" href="#">TC</a>
+        <a class="logo" href="#"><span>TC</span></a>
 
         <a href="#main-menu"
         class="menu-toggle"
@@ -48,7 +49,8 @@
             role="navigation"
             aria-expanded="false"
             aria-label="Main menu">
-            <a href="#main-menu-toggle"
+            <!-- FIXME closing menu always goes here -->
+            <a href="#about"
             class="menu-close"
             role="button"
             id="main-menu-close"
@@ -58,7 +60,6 @@
             <span class="sr-only">Close main menu</span>
             <span aria-hidden="true">&#x2715;</span>
             </a>
-
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#terminal-app">Terminal App</a></li>

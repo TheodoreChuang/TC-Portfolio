@@ -16,6 +16,12 @@ header {
         .logo {
             float: left;
             padding: 10px;
+
+            span:hover {
+                background-color: #000;
+                color: #FFF;
+                transition: 0.3s;
+            }
         }
 
          /* Hamburger styling */
@@ -27,9 +33,9 @@ header {
             font-size: 1em;
             color: #333;
             
-            :hover,
-            :focus {
-              color: gray;
+            span:hover {
+                transition: 0.3s;
+                color: gray;
             }
         }
     
@@ -200,6 +206,7 @@ header {
                 display: flex;
                 justify-content: space-evenly;
                 a {
+                    background: none;
                     border-bottom: none;
                     img {
                         width: 30px;
