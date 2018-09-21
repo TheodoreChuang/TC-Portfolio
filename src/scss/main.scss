@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import 'nav';
 
 /************ Universal Styles ************/
 body {
@@ -18,6 +19,7 @@ p {
 }
 a, a:visited {
     text-decoration: none;
+    // color: black;
 }
 
 
@@ -46,25 +48,7 @@ a, a:visited {
 }
 
 /************ Nav Bar - Small Screen ************/
-nav {
-    position: sticky;
-    top: -1px;
-    width: 100%;
-    height: 40px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid black;
-
-    .logo {
-        float: left;
-        padding: 10px;
-    }
-
-    .nav {
-        float: right;
-        padding: 10px;
-    }
-} 
-
+// Exported to _nav.scss
 
 
 /************ ABOUT ME - Small Screen ************/
@@ -197,23 +181,8 @@ footer {
 }
 
 /************ Nav Bar - Large Screen ************/
-nav {
-    // position: sticky;
+// Exported to _nav.scss
 
-    height: 0px;
-    // background-color: #FFFFFF;
-    border: none;
-
-    // .logo {
-    //     float: left;
-    //     padding: 2%;
-    // }
-
-    // .nav {
-    //     float: right;
-    //     padding: 2%;
-    // }
-} 
 
 /************ ABOUT ME - Large Screen ************/
 .about {
