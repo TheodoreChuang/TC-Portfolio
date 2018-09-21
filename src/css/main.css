@@ -65,6 +65,9 @@ header {
       background: #1a1a1a; }
       header .main-menu ul li:first-child a {
         border-top: 1px solid #383838; }
+      header .main-menu ul .social-contacts {
+        display: none;
+        border-bottom: none; }
     header .main-menu a {
       display: block;
       padding: .75em 15px;
@@ -126,7 +129,18 @@ header {
     header .main-menu {
       right: -32vw; }
       header .main-menu ul {
-        width: 30vw; } }
+        width: 30vw; }
+        header .main-menu ul .social-contacts {
+          margin-top: 1em;
+          display: flex;
+          justify-content: space-evenly; }
+          header .main-menu ul .social-contacts a {
+            border-bottom: none; }
+            header .main-menu ul .social-contacts a img {
+              width: 30px;
+              filter: grayscale(100%); }
+            header .main-menu ul .social-contacts a :hover {
+              filter: grayscale(0%); } }
 /************ end Nav Bar - Large Screen ************/
 /************ Universal Styles ************/
 body {

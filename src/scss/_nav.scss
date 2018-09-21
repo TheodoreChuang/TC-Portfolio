@@ -69,6 +69,11 @@ header {
         li:first-child a {
             border-top: 1px solid #383838;
           }
+
+        .social-contacts {
+            display: none;
+            border-bottom: none;
+        }
     }
       
     a {
@@ -170,8 +175,23 @@ header {
 
         ul {
             width: 30vw;
+
+            .social-contacts {
+                margin-top: 1em;
+                display: flex;
+                justify-content: space-evenly;
+                a {
+                    border-bottom: none;
+                    img {
+                        width: 30px;
+                        filter: grayscale(100%);
+                    }
+                    :hover {
+                        filter: grayscale(0%);
+                    }
+                }
+            }
         }
     }
-
 }
 } /************ end Nav Bar - Large Screen ************/
