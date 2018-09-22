@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
-@import 'nav';
+@import 'universal';
 
 /*
 Views:
@@ -7,35 +6,6 @@ Views:
     Medium < 900px
     Large 900-1600px;
 */
-
-
-/************ Universal Styles ************/
-html {
-    scroll-behavior: smooth;
-}
-body {
-    @supports (scroll-snap-type: y proximity) {
-        scroll-snap-type: y proximity;
-    }
-    max-width: 1600px;
-    margin: 0 auto; 
-    font-family: 'Montserrat', sans-serif;
-}
-h3 {
-    margin: 0 0 1em 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    color: gray;   
-}
-p {
-    line-height: 1.75em;
-}
-a, a:visited {
-    text-decoration: none;
-    color: black;
-}
-
 
 ///////////////////////////////////////////////////////
 ///////////////////* Small Styles  *///////////////////
@@ -143,40 +113,14 @@ a, a:visited {
     }  
 }
 
-/************ Footer / Contacts - Small Screen ************/
-footer {
-    margin: 7%;
+////////////////* end - Small Styles  */////////////////
 
-    .social-contacts {
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-evenly;
-        
-        a {
-            img {
-            width: 40px;
-            }
-        }
-    }
-    .fine-print {
-        text-align: center;
-        font-size: 0.9em;
-        font-family: 'Raleway', sans-serif;
-        color: gray;  
-    }
-}
-////////////////* end -Small Styles  */////////////////
 
 ///////////////////////////////////////////////////////
 ///////////////////* Medium Styles *////////////////////
 
 @media (min-width: 700px) {
 /************ WELCOME - Medium Screen ************/
-.page {
-    height: 90vh;
-    margin: 7%;
-    padding: 0;
-}
 .welcome {
    
     h1 {
@@ -277,16 +221,8 @@ footer {
     }  
 }
 
-/************ Footer / Contacts - Medium Screen ************/
-footer {
-    .social-contacts {
-        width: 70%;
-        margin: 0 auto;
-    }
 }
-
-}
-/////////////////* end Medium Styles *///////////////medium
+/////////////////* end Medium Styles *///////////////
 
 ///////////////////////////////////////////////////////
 ///////////////////* Large Styles *////////////////////
@@ -331,13 +267,6 @@ footer {
         .yelpcamp {
             @extend %card-large;
         }  
-    }
-    
-    /************ Footer / Contacts - Large Screen ************/
-    footer {
-        .social-contacts {
-            width: 50%;
-        }
     }
     
     }
