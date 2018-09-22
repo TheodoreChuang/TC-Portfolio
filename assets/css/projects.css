@@ -237,154 +237,28 @@ Views:
     Medium < 900px
     Large 900-1600px;
 */
-/************ WELCOME - Small Screen ************/
-.welcome {
+/************ Hero - Small Screen ************/
+.hero-banner {
   height: 100vh;
   margin: 0%;
-  padding: 1%;
-  background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80"); }
-  .welcome h1 {
-    margin: 40vh 0 0 10%;
-    font-size: 1.5em; }
-  .welcome h2 {
-    margin: 1% 0 0 11%;
-    font-size: 1em; }
-  .welcome .social-contacts-header {
-    margin: 2% 10%;
-    display: flex;
-    justify-content: space-between; }
-    .welcome .social-contacts-header a img {
-      width: 25px; }
+  padding: 1%; }
+  .hero-banner img {
+    max-height: 100vh; }
 
-/************ ABOUT ME - Small Screen ************/
-.about {
-  margin: 7%; }
-  .about .profile-picture-small {
-    padding: 0 5%;
-    max-width: 90%; }
-  .about .profile-picture-large {
-    display: none; }
-  .about .tech-stack {
-    display: flex;
-    justify-content: space-evenly; }
-    .about .tech-stack img {
-      width: 10%;
-      height: 10%;
-      padding: 2%; }
+.project-description {
+  margin: 7%;
+  display: flex;
+  flex-direction: column; }
 
-/************ Project Gallery - Small Screen - Flexbox ************/
-.project-gallery {
+.project-image-gallery {
   margin: 7%; }
-  .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
-    margin-bottom: 7%;
-    height: 55vh;
-    padding: 10% 5%;
-    display: flex;
-    flex-direction: column;
-    color: #FFFFFF;
-    border-radius: 15px; }
-    @supports (scroll-snap-align: center) {
-      .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
-        scroll-snap-align: center; } }
-    .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
-      margin: 0; }
-    .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
-      margin: 0;
-      padding: 1% 0 5% 0;
-      font-size: 0.9em; }
-    .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
-      padding-left: 5%;
-      width: 90%; }
-    .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
-      font-size: 0.85em; }
-  .project-gallery .terminal-app {
-    background: #1AA03A; }
-    .project-gallery .terminal-app .project-services {
-      bottom: 0; }
-  .project-gallery .saas-blog-mockup {
-    background: #FFB900; }
-  .project-gallery .yelpcamp {
-    background: #64D0C0; }
+  .project-image-gallery img {
+    width: auto;
+    height: auto; }
 
 @media (min-width: 700px) {
-  /************ WELCOME - Medium Screen ************/
-  .welcome h1 {
-    margin: 50vh 0 0 10%;
-    font-size: 2.5em; }
-  .welcome .social-contacts-header {
-    width: 50%; }
-    .welcome .social-contacts-header a {
-      padding: 0 2%; }
-      .welcome .social-contacts-header a img {
-        width: 30px; }
-
-  /************ ABOUT ME - Medium Screen ************/
-  .about {
-    min-height: 90vh;
-    display: flex;
-    align-items: center; }
-    @supports (scroll-snap-align: center) {
-      .about {
-        scroll-snap-align: center; } }
-    .about .about-desc {
-      max-width: 60%; }
-      .about .about-desc .profile-picture-small {
-        display: none; }
-    .about .about-images {
-      max-width: 40%; }
-      .about .about-images .profile-picture-large {
-        margin: 0 10%;
-        max-width: 80%;
-        display: inline; }
-
-  /************ Project Gallery - Medium Screen - Grid ************/
-  .project-gallery {
-    margin: 0; }
-    .project-gallery h3 {
-      position: relative;
-      margin-left: 7%;
-      top: 5vh; }
-    .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
-      padding-bottom: 5%;
-      display: grid;
-      grid-template-columns: 30% 70%;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "left-top right" "left-middle right" "left-bottom right";
-      grid-column-gap: 20px; }
-      .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
-        grid-area: left-top;
-        align-self: end;
-        font-size: 1.5em; }
-      .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
-        grid-area: left-middle;
-        font-size: 1em;
-        padding: 0%; }
-      .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
-        grid-area: right;
-        justify-self: end;
-        align-self: center;
-        align-self: right;
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto; }
-      .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
-        grid-area: left-bottom;
-        align-self: end; } }
+  /************ Hero - Medium Screen ************/ }
 @media (min-width: 900px) {
-  /************ WELCOME - Large Screen ************/
-  .welcome h1 {
-    font-size: 4em; }
-  .welcome h2 {
-    font-size: 2em; }
-  .welcome .social-contacts-header {
-    width: 40%; }
+  /************ Hero - Large Screen ************/ }
 
-  /************ ABOUT ME - Large Screen ************/
-  /************ Project Gallery - Large Screen - Grid  ************/
-  .project-gallery h3 {
-    top: 7vh; }
-  .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
-    font-size: 2.5em; } }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=projects.css.map */

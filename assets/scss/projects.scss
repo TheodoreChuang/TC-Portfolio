@@ -6,3 +6,92 @@ Views:
     Medium < 900px
     Large 900-1600px;
 */
+
+///////////////////////////////////////////////////////
+///////////////////* Small Styles  *///////////////////
+
+/************ Hero - Small Screen ************/
+.hero-banner {
+    height: 100vh;
+    margin: 0%;
+    padding: 1%;
+
+    img {
+        max-height: 100vh;
+    }
+}
+
+.project-description {
+    margin: 7%;
+    display: flex;
+    flex-direction: column;
+}
+.project-image-gallery {
+    margin: 7%;
+    img {
+        // align-self: center;
+        // align-self: right;
+        // max-width: 100%;
+        // max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.next-project-banner {
+    // margin: 7%;
+}
+
+///////////////* end - Small Styles  */////////////////
+
+
+///////////////////////////////////////////////////////
+///////////////////* Medium Styles *////////////////////
+
+@media (min-width: 700px) {
+/************ Hero - Medium Screen ************/
+// .hero-banner {
+//     height: 100vh;
+//     margin: 0%;
+//     padding: 1%;
+// }
+
+// .project-description {
+//     margin: 7%;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .project-image-gallery {
+//     margin: 7%;
+// }
+// .next-project-banner {
+//     // margin: 7%;
+// }
+
+}
+////////////////* end Medium Styles *///////////////
+
+
+///////////////////////////////////////////////////////
+///////////////////* Large Styles *////////////////////
+
+@media (min-width: 900px) {
+/************ Hero - Large Screen ************/
+// .hero-banner {
+//     height: 100vh;
+//     margin: 0%;
+//     padding: 1%;
+// }
+
+// .project-description {
+//     margin: 7%;
+//     flex-direction: row;
+// }
+// .project-image-gallery {
+//     margin: 7%;
+// }
+// .next-project-banner {
+//     // margin: 7%;
+// }
+
+}
+/////////////////* end Large Styles *//////////////////

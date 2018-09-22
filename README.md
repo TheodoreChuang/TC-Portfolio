@@ -87,7 +87,7 @@ Source Files @ https://github.com/TheodoreChuang/TC-Portfolio
     * individual credits commented in index.html
 
 
-## Short Answer Q&A on the Interent
+## Short Answer Q&A on the Internet
 
 #### Describe key events in the development of the internet from the 1980s to today
 
