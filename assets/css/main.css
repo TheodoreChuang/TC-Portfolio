@@ -256,8 +256,6 @@ a, a:visited {
       padding-left: 5%;
       width: 90%; }
     .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
-      position: relative;
-      bottom: -10%;
       font-size: 0.85em; }
   .project-gallery .terminal-app {
     background: #1AA03A; }
@@ -351,8 +349,7 @@ footer {
         height: auto; }
       .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
         grid-area: left-bottom;
-        align-self: end;
-        bottom: 0px; }
+        align-self: end; }
 
   /************ Footer / Contacts - Medium Screen ************/
   footer .social-contacts {
