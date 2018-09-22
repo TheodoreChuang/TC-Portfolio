@@ -64,6 +64,11 @@ header {
     transition: right 0.3s ease,
                 box-shadow 0.3s ease;
     z-index: 999;
+    
+    // FIXME: align close button to right instead of left
+    // .menu-close span {
+        // text-align: right;
+    // }
   
     ul {
         list-style: none;

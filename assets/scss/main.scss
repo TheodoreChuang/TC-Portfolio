@@ -14,7 +14,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    scroll-snap-type: y proximity;
+    @supports (scroll-snap-type: y proximity) {
+        scroll-snap-type: y proximity;
+    }
     max-width: 1600px;
     margin: 0 auto; 
     font-family: 'Montserrat', sans-serif;
@@ -96,14 +98,16 @@ a, a:visited {
     margin: 7%;
   
     %card-small {
-        scroll-snap-align: center;
+        @supports (scroll-snap-align: center) {
+            scroll-snap-align: center;
+        }
         margin-bottom: 7%;
         height: 55vh;
         padding: 10% 5%;
         display: flex;
         flex-direction: column;
         color: #FFFFFF;
-        border-radius: 2%;
+        border-radius: 15px;
 
             .project-title {
                 margin: 0;
@@ -192,7 +196,9 @@ footer {
 
 /************ ABOUT ME - Medium Screen ************/
 .about {
-    scroll-snap-align: center;
+    @supports (scroll-snap-align: center) {
+        scroll-snap-align: center;
+    }
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -224,7 +230,6 @@ footer {
     }
   
     %card-medium {
-        scroll-snap-align: center;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 30% 70%;

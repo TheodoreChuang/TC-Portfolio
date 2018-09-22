@@ -180,10 +180,12 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  scroll-snap-type: y proximity;
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif; }
+  @supports (scroll-snap-type: y proximity) {
+    body {
+      scroll-snap-type: y proximity; } }
 
 h3 {
   margin: 0 0 1em 0;
@@ -238,14 +240,16 @@ a, a:visited {
 .project-gallery {
   margin: 7%; }
   .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
-    scroll-snap-align: center;
     margin-bottom: 7%;
     height: 55vh;
     padding: 10% 5%;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-    border-radius: 2%; }
+    border-radius: 15px; }
+    @supports (scroll-snap-align: center) {
+      .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+        scroll-snap-align: center; } }
     .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
       margin: 0; }
     .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
@@ -300,10 +304,12 @@ footer {
 
   /************ ABOUT ME - Medium Screen ************/
   .about {
-    scroll-snap-align: center;
     min-height: 90vh;
     display: flex;
     align-items: center; }
+    @supports (scroll-snap-align: center) {
+      .about {
+        scroll-snap-align: center; } }
     .about .about-desc {
       max-width: 60%; }
       .about .about-desc .profile-picture-small {
@@ -323,7 +329,6 @@ footer {
       margin-left: 7%;
       top: 5vh; }
     .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
-      scroll-snap-align: center;
       padding-bottom: 5%;
       display: grid;
       grid-template-columns: 30% 70%;
