@@ -1,7 +1,7 @@
 a.anchor {
     display: block;
     position: relative;
-    top: -12vh;
+    top: -9vh;
     visibility: hidden;
 }
 
@@ -183,8 +183,15 @@ header {
 
 }    
 
-/************ Nav Bar - Large Screen ************/
+/************ Nav Bar - Medium + Large Screen ************/
 @media (min-width: 700px) {
+a[name*="terminal-app"] {
+    display: block;
+    position: relative;
+    top: 3vh;
+    visibility: hidden;
+}
+
 header {
     height: 0px;
     border: none;
@@ -220,4 +227,4 @@ header {
         }
     }
 }
-} /************ end Nav Bar - Large Screen ************/
+} /************ end Nav Bar - Medium + Large Screen ************/
