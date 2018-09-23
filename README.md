@@ -12,11 +12,19 @@ The primary audience of this portfolio are any potential employers including hum
 The website features simple, minimalistic design reflective of Theodore's personality. The website is responsive and optimized for small, medium, and large devices. The menu is visible for navigation at all times. Contact details are readily available in the header, footer, and menu. Minimal external assets were used in order to present Theodore's work in its raw form.
 
 
-#### Screenshots
-<!-- <p align="center">
-  <img src="" alt="screenshot of design wireframes"/>
-</p> -->
-
+#### Screenshots of Mobile View:
+<p align="left">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-header-v2-min.png?raw=true" alt="screenshot of mobile view header/>
+</p>
+<p align="left">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-about-v2-min.png?raw=true" alt="screenshot of mobile view about/>
+</p>
+<p align="left">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-menu-v1-min.png?raw=true" alt="screenshot of mobile view menu/>
+</p>
+<p align="left">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-footer-v1-min.png?raw=true" alt="screenshot of mobile view footer/>
+</p>
 
 ## Tech Stack
 
@@ -48,9 +56,10 @@ Tools used were:
 Design was an iterative process over multiple stages. The first stage was framing the project's purpose, target audience, moods, and overall theme. The second stage was brainstorming content, features, and design. The third and final step was wireframing the designs.
 
 #### Wireframes
-<!-- <p align="center">
-  <img src="" alt="screenshot of design wireframes"/>
-</p> -->
+<p align="center">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/balsamiq-mockup-screenshot-portfolio.png?raw=true" alt="screenshot of design wireframes"/>
+</p>
+
 
 #### Personal Logo
 The Logo for this portfolio are the initials `TC` in the site's heading font `Raleway`.
@@ -73,9 +82,9 @@ The Logo for this portfolio are the initials `TC` in the site's heading font `Ra
     * Delivery Portfolio and Present
 
 #### Trello Board:
-<!-- <p align="center">
-  <img src="" alt="trello board used for planning"/>
-</p> -->
+<p align="center">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/trello-board-for-planning.png?raw=true" alt="screenshot of planning board"/>
+</p>
 
 ## Links:
 See my portfolio @ https://theodorechuang.github.io/TC-Portfolio/
