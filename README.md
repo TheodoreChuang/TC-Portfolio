@@ -9,7 +9,7 @@ The purpose of this portfolio is to impress and inform anyone interested in Theo
 The primary audience of this portfolio are any potential employers including human resources, developers, management, recruiters, and business owners. A balance between incorporting a rich user experience and the usabiilty of non-technical persons was considered in the design.
 
 #### Functionality / Features
-The website features simple, minimalistic design reflective of Theodore's personality. The website is responsive and optimized for small, medium, and large devices. The menu is visible for navigation at all times. Contact details are readily available at in header, footer, and menu. Minimal external assets were used in order to present Theodore's work in its raw form.
+The website features simple, minimalistic design reflective of Theodore's personality. The website is responsive and optimized for small, medium, and large devices. The menu is visible for navigation at all times. Contact details are readily available in the header, footer, and menu. Minimal external assets were used in order to present Theodore's work in its raw form.
 
 
 #### Screenshots
@@ -30,13 +30,13 @@ The website features simple, minimalistic design reflective of Theodore's person
     * Normalize.CSS
 
 #### Hosting:
-* Gitpages
+* Github Pages @ https://theodorechuang.github.io/TC-Portfolio/
 
 
 ## Usability and Performance
 Usability and Performance were a major consideration in the design decisions. Semantic HTML tags assist screen readers in deciphering the page content. Images are embedded into the HTML instead of the CSS and have descriptive `alt` tags.
 
-To optimize page load all images were compressed and minimal external libraries were imported. Functionalities was built with CSS instead of Javascript.
+To optimize page load all images were compressed and minimal external libraries were imported. Functionalities were built with CSS instead of Javascript.
 
 Tools used were:
 * https://a11yproject.com/checklist
