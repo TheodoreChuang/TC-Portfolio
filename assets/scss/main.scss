@@ -91,7 +91,7 @@ Views:
                 padding-left: 5%;
                 width: 90%;
             }
-            .project-services {
+            .project-roles {
                 font-size: 0.85em;
             }
     }
@@ -99,7 +99,7 @@ Views:
     .terminal-app {
         @extend %card-small;
         background: #1AA03A;
-        .project-services {
+        .project-roles {
             bottom: 0; // manual override due to greater image height
         }
     }      
@@ -204,7 +204,7 @@ Views:
                 width: auto;
                 height: auto;
             }
-            .project-services {
+            .project-roles {
                 grid-area: left-bottom;
                 align-self: end;
             }

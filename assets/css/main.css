@@ -194,8 +194,8 @@ h3 {
   text-transform: uppercase;
   color: gray; }
 
-p {
-  line-height: 1.75em; }
+p, li {
+  line-height: 1.3em; }
 
 a, a:visited {
   text-decoration: none;
@@ -295,11 +295,11 @@ Views:
     .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
       padding-left: 5%;
       width: 90%; }
-    .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
+    .project-gallery .terminal-app .project-roles, .project-gallery .saas-blog-mockup .project-roles, .project-gallery .yelpcamp .project-roles {
       font-size: 0.85em; }
   .project-gallery .terminal-app {
     background: #1AA03A; }
-    .project-gallery .terminal-app .project-services {
+    .project-gallery .terminal-app .project-roles {
       bottom: 0; }
   .project-gallery .saas-blog-mockup {
     background: #FFB900; }
@@ -368,7 +368,7 @@ Views:
         max-height: 100%;
         width: auto;
         height: auto; }
-      .project-gallery .terminal-app .project-services, .project-gallery .saas-blog-mockup .project-services, .project-gallery .yelpcamp .project-services {
+      .project-gallery .terminal-app .project-roles, .project-gallery .saas-blog-mockup .project-roles, .project-gallery .yelpcamp .project-roles {
         grid-area: left-bottom;
         align-self: end; } }
 @media (min-width: 900px) {

@@ -28,13 +28,46 @@ h3 {
     text-transform: uppercase;
     color: gray;   
 }
-p {
-    line-height: 1.75em;
+p, li {
+    line-height: 1.3em;
 }
 a, a:visited {
     text-decoration: none;
     color: black;
 }
+
+// Chevron
+// .chevron {
+//     position: relative;
+//     top: 10vh;
+//     left: 50%;
+//     height: 60px;
+//     width: 200px;
+// }​
+// .chevron::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 10%;
+//     width: 51%;
+//     background: gray;
+//     transform: skew(0deg, 20deg);
+// }
+// .chevron::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 10%;
+//     width: 50%;
+//     background: #000;
+//     transform: skew(0deg, -20deg);
+// } 
+
+
+    
+  
 
 
 ///////////////////////////////////////////////////////
