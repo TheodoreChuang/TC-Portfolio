@@ -13,18 +13,19 @@ The website features simple, minimalistic design reflective of Theodore's person
 
 
 #### Screenshots of Mobile View:
-<p align="left">
+<p align="center">
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-header-v2-min.png?raw=true" alt="screenshot of mobile view header/>
 </p>
-<p align="left">
+<p align="center">
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-about-v2-min.png?raw=true" alt="screenshot of mobile view about/>
 </p>
-<p align="left">
+<p align="center">
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-menu-v1-min.png?raw=true" alt="screenshot of mobile view menu/>
 </p>
-<p align="left">
+<p align="center">
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-footer-v1-min.png?raw=true" alt="screenshot of mobile view footer/>
 </p>
+
 
 ## Tech Stack
 
