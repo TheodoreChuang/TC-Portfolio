@@ -12,87 +12,33 @@
 </head>
 
 <body>
-<!-- Universal Navigation Logo and Hamburger Menu -->
-<header>
-        <a class="logo" href="#"><span>TC</span></a>
-
-        <a href="#main-menu"
-        class="menu-toggle"
-        role="button"
-        id="main-menu-toggle"
-        aria-expanded="false"
-        aria-controls="main-menu"
-        aria-label="Open main menu">
-        <span class="sr-only">Open main menu</span>
-        <span aria-hidden="true">☰</span>
-        </a>
-
-        <nav id="main-menu"
-            class="main-menu"
-            role="navigation"
-            aria-expanded="false"
-            aria-label="Main menu">
-            <!-- FIXME closing menu always goes here -->
-            <a href="#about"
-            class="menu-close"
-            role="button"
-            id="main-menu-close"
-            aria-expanded="false"
-            aria-controls="main-menu"
-            aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <span aria-hidden="true">&#x2715;</span>
-            </a>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#terminal-app">Terminal App</a></li>
-                <li><a href="#saas-blog-mockup">SaaS Blog</a></li>
-                <li><a href="#yelpcamp">YelpCamp</a></li>
-                <li class="social-contacts">
-                    <a href="https://github.com/TheodoreChuang">
+    <section class="hero-image">
+        <div class="hero-text">
+            <h1>Theodore Chuang</h1> 
+            <h2>full stack web developer. decentralized consensus enthusiast.</h2>
+            <div class="social-contacts-header">
+                    <a href="https://github.com/TheodoreChuang" rel="noreferrer" target="_blank">
                         <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
-                    <a href="https://twitter.com/TheodoreChuang">
+                    <a href="https://twitter.com/TheodoreChuang" rel="noreferrer" target="_blank">
                         <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
-                    <a href="https://medium.com/@theodorechuang">
+                    <a href="https://medium.com/@theodorechuang" rel="noreferrer" target="_blank">
                         <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
-                    <a href="https://www.linkedin.com/in/theodorechuang/">
+                    <a href="https://www.linkedin.com/in/theodorechuang/" rel="noreferrer" target="_blank">
                         <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
-                    <a href="mailto:chuangtheodore@gmail.com"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
-                </li>
-            </ul>
-        </nav>
-            <a href="#main-menu-toggle" class="backdrop" hidden></a>
-    </header>
-    <!-- end Universal Navigation Logo and Hamburger Menu -->
-
-    <div class="welcome">
-        <h1>Theodore Chuang</h1> 
-        <h2>full stack web developer. decentralized consensus enthusiast.</h2>
-        <div class="social-contacts-header">
-            <a href="https://github.com/TheodoreChuang">
-                <img src="assets/images/logo-github.svg" alt="Github Logo" /></a>
-            <a href="https://twitter.com/TheodoreChuang">
-                <img src="assets/images/logo-twitter.svg" alt="Twitter Logo" /></a>
-            <a href="https://medium.com/@theodorechuang">
-                <img src="assets/images/logo-medium.png" alt="Medium Logo`" /></a>
-            <a href="https://www.linkedin.com/in/theodorechuang/">
-                <img src="assets/images/logo-linkedin.svg" alt="LinkedIn Logo`" /></a>
-            <a href="mailto:chuangtheodore@gmail.com"><img src="assets/images/logo-gmail.svg" alt="Email Icon" /></a>
+                    <a href="mailto:chuangtheodore@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
+            </div>
+        <a href="#about"><div class="chevron"></div></a>
         </div>
-        <!-- FIXME - Chevron class="chevron" -->
-        <!-- <a href="#about">\/</a> -->
-    </div>
+    </section>
     
     <section class="about page">
         <div class="about-desc">
             <a class="anchor" name="about"></a>
             <h3 class="about-title">About Me</h3>
             <img class="profile-picture-small" src="assets/images/FullSizeRender.jpg" alt="Profile Picture of Theodore Chuang" />
-            <p class="about-intro">I am a Canadian web development looking for opportunities based in Sydney. Currently I am practicing full stack web development full time at Coder Academy. In my spare time, I frequently hanging out at Meetups at night (JS, Ruby, Blockchain) or soaking in the beautiful scenery during the weekends.</p>
+            <p class="about-intro">I am a Canadian web developer based in Sydney looking for my next exciting opportunity. Currently I am practicing full stack web development full time at Coder Academy. In my spare time, I am hanging out at Meetups (JS, Ruby, Blockchain) at night or soaking in the beautiful scenery during the weekends.</p>
             <p class="about-values">I believe technology is a powerful tool to create a better world. I am especially interested in exploring a decentralized consensus with blockchain, cryptocurrenices, and decentralized application.</p>
-        
-            <p class="about-exp">In my previous career, I was a real estate appraiser in the public section for six years in Vancouver, Canada. Crunching data, building valuation models and defending my market estimation was my daily routine. Spreadsheets were my best friend. After moving to Sydney, I contributed to Optus’s mobile deployment property team. Had a great time but I am looking to help people in other ways and at greater scale by leveraging technology,
-            I looking forward to working with you. Let’s build something great together.</p>
+            <p class="about-exp">In my previous career, I was a real estate appraiser in the public section for six years in Vancouver, Canada. Crunching data, building valuation models and defending my market estimation was my daily routine. Spreadsheets were my best friend. After moving to Sydney, I contributed to Optus’s mobile deployment property team. Had a great time but I am looking to help people in other ways and at greater scale by leveraging technology. I looking forward to working with you. Let’s build something great together.</p>
         </div>
         <div class="about-images">
             <img class="profile-picture-large" src="assets/images/FullSizeRender.jpg" alt="Profile Picture of Theodore Chuang" />
@@ -114,29 +60,29 @@
         <a href="terminal-app.html">
         <section class="terminal-app page">
             <h4 class="project-title">Get Me The Money</h4>
-            <p class="project-snippet">an user friendly, light weight, offline POS for small business</p>
+            <p class="project-snippet">an user friendly, light weight, offline POS for small businesses</p>
             <img src="assets/images/GetMeMoney-menu_options_screenshot.png" alt="screenshot of terminal app project" />
-            <p class="project-roles">ruby, design</p>
+            <p class="project-roles">design; back-end development: ruby</p>
         </section>
         </a>
 
         <a class="anchor" name="saas-blog-mockup"></a>
-        <!-- <a href="#"> -->
+        <a href="https://github.com/TheodoreChuang/Frontend_Basic_Practice/tree/master/mock_blog" rel="noreferrer" target="_blank">
         <section class="saas-blog-mockup page">
             <h4 class="project-title">SaaS Blog Mockup</h4>
-            <p class="project-snippet">mockup of blog for a SaaS company </p>
+            <p class="project-snippet">mockup of blog for a SaaS company</p>
             <img src="assets/images/saas-blog-header.png" alt="screenshot of saas blog mockup" />
-            <p class="project-roles">HTML, CSS</p>
+            <p class="project-roles">front-end development: HTML, CSS</p>
         </section>
-        <!-- </a> -->
+        </a>
 
         <a class="anchor" name="yelpcamp"></a>
-        <a href="https://yelpcamp-tchuang.herokuapp.com/"> 
+        <a href="https://yelpcamp-tchuang.herokuapp.com/" rel="noreferrer" target="_blank"> 
         <section class="yelpcamp page">
             <h4 class="project-title">Yelp Camp</h4>
             <p class="project-snippet">find your next camp site</p>
             <img src="assets/images/yelpcamp-home.png" alt="screenshot of Yelp Camp project" />
-            <p class="project-roles">MEN stack, Passport.js, Heroku, HTML, CSS (course)</p>
+            <p class="project-roles">full-stack development: MEN, Heroku</p>
         </section>
         </a>
     </div>
@@ -147,18 +93,18 @@
     <a class="anchor" name="connect"></a>
     <footer>
         <h3>Connect with Me</h3>
-        <p>If you think I would be a good fit for your team, drop me a line. Happy to chat anytime.</p>
+        <p>If you think we would be a good fit for each other, drop me a line. Happy to chat anytime.</p>
 
         <div class="social-contacts">
-            <a href="https://github.com/TheodoreChuang">
-                <img src="assets/images/logo-github.svg" class="invert" alt="Github Logo" /></a>
-            <a href="https://twitter.com/TheodoreChuang">
-                <img src="assets/images/logo-twitter.svg" alt="Twitter Logo" /></a>
-            <a href="https://medium.com/@theodorechuang">
-                <img src="assets/images/logo-medium.png" class="invert" alt="Medium Logo`" /></a>
-            <a href="https://www.linkedin.com/in/theodorechuang/">
-                <img src="assets/images/logo-linkedin.svg" alt="LinkedIn Logo`" /></a>
-            <a href="mailto:chuangtheodore@gmail.com"><img src="assets/images/logo-gmail.svg" alt="Email Icon" /></a>
+                <a href="https://github.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
+                <a href="https://twitter.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
+                <a href="https://medium.com/@theodorechuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
+                <a href="https://www.linkedin.com/in/theodorechuang/" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
+                <a href="mailto:chuangtheodore@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
         </div>
 
         <p class="fine-print">© 2018 Theodore Chuang. 
@@ -166,6 +112,60 @@
             <br>Chasing the sun in beautiful Sydney
         </p>
     </footer>
+
+<!-- Universal Navigation Logo and Hamburger Menu -->
+<!-- Navigater placed at end of HTML as other positioned content was overlapping menu  -->
+<header>
+    <a class="logo" href="#"><span>TC</span></a>
+
+    <a href="#main-menu"
+    class="menu-toggle"
+    role="button"
+    id="main-menu-toggle"
+    aria-expanded="false"
+    aria-controls="main-menu"
+    aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span aria-hidden="true">☰</span>
+    </a>
+
+    <nav id="main-menu"
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+        <!-- FIXME closing menu must go somewhere -->
+        <a href="#about"
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span aria-hidden="true">&#x2715;</span>
+        </a>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#terminal-app">Terminal App</a></li>
+            <li><a href="#saas-blog-mockup">SaaS Blog</a></li>
+            <li><a href="#yelpcamp">YelpCamp</a></li>
+            <li class="social-contacts">
+                <a href="https://github.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
+                <a href="https://twitter.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
+                <a href="https://medium.com/@theodorechuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
+                <a href="https://www.linkedin.com/in/theodorechuang/" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
+                <a href="mailto:chuangtheodore@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
+            </li>
+        </ul>
+    </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>
+</header>
+<!-- end Universal Navigation Logo and Hamburger Menu -->
 
 </body> 
 </html>

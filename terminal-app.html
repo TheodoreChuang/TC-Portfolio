@@ -12,63 +12,10 @@
 </head>
 
 <body>
-<!-- Universal Navigation Logo and Hamburger Menu -->
-<header>
-        <a class="logo" href="#"><span>TC</span></a>
-
-        <a href="#main-menu"
-        class="menu-toggle"
-        role="button"
-        id="main-menu-toggle"
-        aria-expanded="false"
-        aria-controls="main-menu"
-        aria-label="Open main menu">
-        <span class="sr-only">Open main menu</span>
-        <span aria-hidden="true">☰</span>
-        </a>
-
-        <nav id="main-menu"
-            class="main-menu"
-            role="navigation"
-            aria-expanded="false"
-            aria-label="Main menu">
-            <!-- FIXME closing menu always goes here -->
-            <a href="#"
-            class="menu-close"
-            role="button"
-            id="main-menu-close"
-            aria-expanded="false"
-            aria-controls="main-menu"
-            aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <span aria-hidden="true">&#x2715;</span>
-            </a>
-            <ul>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="#">Terminal App</a></li>
-                <li><a href="index.html#saas-blog-mockup">SaaS Blog</a></li>
-                <li><a href="index.html#yelpcamp">YelpCamp</a></li>
-                <li class="social-contacts">
-                    <a href="https://github.com/TheodoreChuang">
-                        <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
-                    <a href="https://twitter.com/TheodoreChuang">
-                        <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
-                    <a href="https://medium.com/@theodorechuang">
-                        <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
-                    <a href="https://www.linkedin.com/in/theodorechuang/">
-                        <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
-                    <a href="mailto:chuangtheodore@gmail.com"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
-                </li>
-            </ul>
-        </nav>
-            <a href="#main-menu-toggle" class="backdrop" hidden></a>
-    </header>
-    <!-- end Universal Navigation Logo and Hamburger Menu -->
-
     <section class="hero-image">
         <div class="hero-text">
             <h1>Get Me The Money</h1> 
-            <h2>an user friendly, light weight, offline POS for small business</h2>
+            <h2>an user friendly, light weight, offline POS for small businesses</h2>
         </div>
     </section>
 
@@ -91,7 +38,7 @@
             <h3>Technologies</h3>
                 <p>ruby</p>
             <h3>Check It</h3>
-                <a href="https://github.com/TheodoreChuang/ruby-pos" target="_blank">> Github Repo</a>
+                <a href="https://github.com/TheodoreChuang/ruby-pos" rel="noreferrer" target="_blank">> Github Repo</a>
         </div>
     </section>
 
@@ -119,18 +66,18 @@
     <a class="anchor" name="connect"></a>
     <footer>
         <h3>Connect with Me</h3>
-        <p>If you think I would be a good fit for your team, drop me a line. Happy to chat anytime.</p>
+        <p>If you think we would be a good fit for each other, drop me a line. Happy to chat anytime.</p>
 
         <div class="social-contacts">
-            <a href="https://github.com/TheodoreChuang">
-                <img src="assets/images/logo-github.svg" class="invert" alt="Github Logo" /></a>
-            <a href="https://twitter.com/TheodoreChuang">
-                <img src="assets/images/logo-twitter.svg" alt="Twitter Logo" /></a>
-            <a href="https://medium.com/@theodorechuang">
-                <img src="assets/images/logo-medium.png" class="invert" alt="Medium Logo`" /></a>
-            <a href="https://www.linkedin.com/in/theodorechuang/">
-                <img src="assets/images/logo-linkedin.svg" alt="LinkedIn Logo`" /></a>
-            <a href="mailto:chuangtheodore@gmail.com"><img src="assets/images/logo-gmail.svg" alt="Email Icon" /></a>
+                <a href="https://github.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
+                <a href="https://twitter.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
+                <a href="https://medium.com/@theodorechuang" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
+                <a href="https://www.linkedin.com/in/theodorechuang/" rel="noreferrer" target="_blank">
+                    <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
+                <a href="mailto:chuangtheodore@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
         </div>
 
         <p class="fine-print">© 2018 Theodore Chuang. 
@@ -138,6 +85,60 @@
             <br>Chasing the sun in beautiful Sydney
         </p>
     </footer>
+
+<!-- Universal Navigation Logo and Hamburger Menu -->
+<!-- Navigater placed at end of HTML as other positioned content was overlapping menu  -->
+<header>
+    <a class="logo" href="#"><span>TC</span></a>
+
+    <a href="#main-menu"
+    class="menu-toggle"
+    role="button"
+    id="main-menu-toggle"
+    aria-expanded="false"
+    aria-controls="main-menu"
+    aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span aria-hidden="true">☰</span>
+    </a>
+
+    <nav id="main-menu"
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+        <!-- FIXME closing menu must go somewhere -->
+        <a href="#"
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span aria-hidden="true">&#x2715;</span>
+        </a>
+        <ul>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="#">Terminal App</a></li>
+            <li><a href="index.html#saas-blog-mockup">SaaS Blog</a></li>
+            <li><a href="index.html#yelpcamp">YelpCamp</a></li>
+            <li class="social-contacts">
+                    <a href="https://github.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                        <img src="assets/images/logo-github.svg" class="img-invert" alt="Github Logo" /></a>
+                    <a href="https://twitter.com/TheodoreChuang" rel="noreferrer" target="_blank">
+                        <img src="assets/images/logo-twitter.svg" class="img" alt="Twitter Logo" /></a>
+                    <a href="https://medium.com/@theodorechuang" rel="noreferrer" target="_blank">
+                        <img src="assets/images/logo-medium.png" class="img-invert" alt="Medium Logo`" /></a>
+                    <a href="https://www.linkedin.com/in/theodorechuang/" rel="noreferrer" target="_blank">
+                        <img src="assets/images/logo-linkedin.svg" class="img" alt="LinkedIn Logo`" /></a>
+                    <a href="mailto:chuangtheodore@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" class="img" alt="Email Icon" /></a>
+            </li>
+        </ul>
+    </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>
+</header>
+<!-- end Universal Navigation Logo and Hamburger Menu -->
 
 </body> 
 </html>

@@ -1,20 +1,43 @@
+/** Default Anchor position; overrides as required **/
 a.anchor {
     display: block;
     position: relative;
     top: -9vh;
     visibility: hidden;
 }
+@media (min-width: 700px) {
+    a[name*="terminal-app"] {
+        display: block;
+        position: relative;
+        top: 3vh;
+        visibility: hidden;
+    }
+}
+@media (min-width: 900px) {
+    a[name*="about"] {
+        display: block;
+        position: relative;
+        top: -20vh;
+        visibility: hidden;
+    }
+}
+
 
 /************ Nav Bar - Small Screen ************/
 header {
-        position: sticky;
-        top: -1px;
+        opacity: 0;     
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 40px;
+        width: 100%;
         background-color: #FFFFFF;
         border-bottom: 1px solid black;
 
         .logo {
-            float: left;
+            position: fixed;
+            top: 0;
+            left: 0;
             padding: 10px;
 
             span:hover {
@@ -26,9 +49,10 @@ header {
 
          /* Hamburger styling */
         .menu-toggle {
-            float: right;
+            position: fixed;
+            top: 0;
+            right: 0;
             padding: 10px;
-            display: inline-block;
             line-height: 1em;
             font-size: 1em;
             color: #333;
@@ -39,7 +63,6 @@ header {
             }
         }
     
-
 /* Screen reader only */
 .sr-only {
     position: absolute;
@@ -52,10 +75,7 @@ header {
     border: 0;
   }
   
-  /*
-   Default styles + Mobile first
-   Offscreen menu style
-  */
+  /* Offscreen menu style */
   .main-menu {
     position: absolute;
     right: -210px;
@@ -64,11 +84,6 @@ header {
     transition: right 0.3s ease,
                 box-shadow 0.3s ease;
     z-index: 999;
-    
-    // FIXME: align close button to right instead of left
-    // .menu-close span {
-        // text-align: right;
-    // }
   
     ul {
         list-style: none;
@@ -93,7 +108,6 @@ header {
             align-items: center;
             justify-content: space-evenly;
             a {
-        
                 border-bottom: none;
                 .img-invert {
                     width: 30px;   
@@ -117,7 +131,7 @@ header {
     }
     .menu-close {
         position: absolute;
-        left: 0;
+        right: 0;
         top: 0;
     }
       
@@ -173,7 +187,6 @@ header {
   width: 100%;
   height: 100%;
   z-index: 998;
-  background: #000;
   background: rgba(0,0,0,0.75);
   cursor: default;
 }
@@ -188,14 +201,8 @@ header {
 
 }    
 
-/************ Nav Bar - Medium + Large Screen ************/
+/************ Nav Bar - Medium Screen + Large Screen ************/
 @media (min-width: 700px) {
-a[name*="terminal-app"] {
-    display: block;
-    position: relative;
-    top: 3vh;
-    visibility: hidden;
-}
 
 header {
     height: 0px;
@@ -203,9 +210,11 @@ header {
 
     .logo {
         margin: 1% 0 0 1.5%;
+        font-size: 1.3em;
     }
     .menu-toggle {
         margin: 1% 2% 0 0;
+        font-size: 1.3em;
     }
     .main-menu {
         right: -32vw;
