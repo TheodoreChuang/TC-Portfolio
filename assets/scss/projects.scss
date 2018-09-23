@@ -35,7 +35,7 @@ Views:
 .project-description {
     margin: 7%;
     
-    .right-bullets ul {
+    .bullets ul {
         margin-left: -20px;
     }
 }
@@ -51,7 +51,7 @@ Views:
         align-items: center;
         
         img {
-        padding: 3.5% 0;
+        padding: 3.5%;
         max-width: 100%;
         max-height: 100%;
         width: auto;
@@ -61,10 +61,7 @@ Views:
 }
 .next-project-banner {
     padding: 7%;
-    // background-color: #555;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("https://raw.githubusercontent.com/TheodoreChuang/TC-Portfolio/project_page/assets/images/saas-blog-header.png");
-    // background-position: center;
-    // background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -83,26 +80,7 @@ Views:
 
 ///////////////////////////////////////////////////////
 ///////////////////* Medium Styles *////////////////////
-
-@media (min-width: 700px) {
-/************ Hero - Medium Screen ************/
-// .hero-banner {
-//     height: 100vh;
-//     margin: 0%;
-//     padding: 1%;
-// }
-
-// .project-description {
-//     margin: 7%;
-// }
-// .project-image-gallery {
-//     margin: 7%;
-// }
-// .next-project-banner {
-//     // margin: 7%;
-// }
-
-}
+// @media (min-width: 700px) {}
 ////////////////* end Medium Styles *///////////////
 
 
@@ -111,34 +89,28 @@ Views:
 
 @media (min-width: 900px) {
 /************ Hero - Large Screen ************/
-// .hero-banner {
-//     height: 100vh;
-//     margin: 0%;
-//     padding: 1%;
-// }
-
 .project-description {
-    margin: 7%;
     display: flex;
 
-    .left-brief {
+    .brief {
         width: 60%;
     }
-    .right-bullets {
+    .bullets {
         padding-left: 10%;
-        width: 20%;
-
-        ul {
-            margin-left: -20px;
-        }
+        width: 40%;
     } 
 }
-// .project-image-gallery {
-//     margin: 7%;
-// }
-// .next-project-banner {
-//     // margin: 7%;
-// }
+.project-images {
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        img {
+            padding: 15px;
+        }
+    }
+}
 
 }
 /////////////////* end Large Styles *//////////////////
