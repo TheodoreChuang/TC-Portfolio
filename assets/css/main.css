@@ -69,6 +69,15 @@ footer {
     justify-content: space-evenly; }
     footer .social-contacts a img {
       width: 40px; }
+    footer .social-contacts a :hover {
+      filter: grayscale(100%);
+      transition: 1s ease; }
+    footer .social-contacts a .img-github:hover {
+      filter: invert(50%);
+      transition: 1s ease; }
+    footer .social-contacts a .img-medium:hover {
+      filter: invert(100%);
+      transition: 1s ease; }
   footer .fine-print {
     text-align: center;
     font-size: 0.9em;
@@ -202,7 +211,7 @@ header {
     header .logo span:hover {
       background-color: #000;
       color: #FFF;
-      transition: 0.3s; }
+      transition: 0.5s ease; }
   header .menu-toggle {
     position: fixed;
     top: 0;
@@ -212,7 +221,7 @@ header {
     font-size: 1em;
     color: #333; }
     header .menu-toggle span:hover {
-      transition: 0.3s;
+      transition: 0.5s ease;
       color: gray; }
   header .sr-only {
     position: absolute;
@@ -330,7 +339,8 @@ header {
               width: 30px;
               filter: grayscale(100%); }
             header .main-menu ul .social-contacts a :hover {
-              filter: grayscale(0%); } }
+              filter: grayscale(0%);
+              transition: 2s ease; } }
 /************ end Nav Bar - Medium + Large Screen ************/
 /*
 Views:
@@ -343,11 +353,15 @@ Views:
   height: 100vh;
   margin: 0%;
   padding: 1%;
-  background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80"); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white), url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8b0ca61fa643ce14689caf7a5bd84d& auto=format&fit=crop&w=1051&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .hero-image .hero-text h1 {
     opacity: 0;
     margin: 40vh 0 0 10%;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-shadow: 1px 1px #555; }
   .hero-image .hero-text h2 {
     opacity: 0;
     margin: 1% 10% 0 11%;
@@ -359,13 +373,25 @@ Views:
     justify-content: space-between; }
     .hero-image .hero-text .social-contacts-header a img {
       width: 25px; }
+    .hero-image .hero-text .social-contacts-header a :hover {
+      filter: grayscale(100%);
+      transition: 1s ease; }
+    .hero-image .hero-text .social-contacts-header a .img-github:hover {
+      filter: invert(50%);
+      transition: 1s ease; }
+    .hero-image .hero-text .social-contacts-header a .img-medium:hover {
+      filter: invert(100%);
+      transition: 1s ease; }
 
 /************ ABOUT ME - Small Screen ************/
 .about {
   margin: 7%; }
   .about .profile-picture-small {
+    display: block;
     padding: 0 5%;
-    max-width: 90%; }
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 400px; }
   .about .profile-picture-large {
     display: none; }
   .about .tech-stack {
@@ -386,7 +412,10 @@ Views:
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-    border-radius: 15px; }
+    border-radius: 15px;
+    box-shadow: 0;
+    transition: box-shadow 1s;
+    border: 1px solid #eee; }
     @supports (scroll-snap-align: center) {
       .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
         scroll-snap-align: center; } }
@@ -405,16 +434,23 @@ Views:
     background: #1AA03A; }
     .project-gallery .terminal-app .project-roles {
       bottom: 0; }
+  .project-gallery .terminal-app:hover {
+    box-shadow: 0 0 30px #515151; }
   .project-gallery .saas-blog-mockup {
     background: #FFB900; }
+  .project-gallery .saas-blog-mockup:hover {
+    box-shadow: 0 0 30px #515151; }
   .project-gallery .yelpcamp {
     background: #64D0C0; }
+  .project-gallery .yelpcamp:hover {
+    box-shadow: 0 0 30px #515151; }
 
 @media (min-width: 700px) {
   /************ WELCOME - Medium Screen ************/
   .hero-image .hero-text h1 {
     margin: 50vh 0 0 10%;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    text-shadow: 2px 2px 1px #555; }
   .hero-image .hero-text .social-contacts-header {
     width: 50%; }
     .hero-image .hero-text .social-contacts-header a {

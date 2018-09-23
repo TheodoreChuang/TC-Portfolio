@@ -17,13 +17,17 @@ Views:
     margin: 0%;
     padding: 1%;
     // TODO: change to own photos; photo transitions/animations
-    background-image: url("https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aed342eea1c8593563be90e10c423dfe&auto=format&fit=crop&w=1039&q=80");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)) ,url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8b0ca61fa643ce14689caf7a5bd84d& auto=format&fit=crop&w=1051&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .hero-text {
         h1 {
             opacity: 0;
             margin: 40vh 0 0 10%;
             font-size: 1.5em;
+            text-shadow: 1px 1px #555;
         }
         h2 {
             opacity: 0;
@@ -39,6 +43,18 @@ Views:
                 img {
                 width: 25px;
                 }
+                :hover {
+                    filter: grayscale(100%);
+                    transition: 1s ease;
+                }
+                .img-github:hover {
+                    filter: invert(50%);
+                    transition: 1s ease;
+                }
+                .img-medium:hover {
+                    filter: invert(100%);
+                    transition: 1s ease;
+                }
             }
         }
     } 
@@ -50,8 +66,11 @@ Views:
     margin: 7%;
 
     .profile-picture-small  {
+        display: block;
         padding: 0 5%;
+        margin: 0 auto;
         max-width: 90%;
+        max-height: 400px;
     }
     .profile-picture-large {
         display: none;
@@ -84,7 +103,10 @@ Views:
         flex-direction: column;
         color: #FFFFFF;
         border-radius: 15px;
-
+        box-shadow: 0;
+        transition: box-shadow 1s;
+        border: 1px solid #eee;
+    
             .project-title {
                 margin: 0;
             }
@@ -108,14 +130,23 @@ Views:
         .project-roles {
             bottom: 0; // manual override due to greater image height
         }
-    }      
+    }    
+    .terminal-app:hover {
+        box-shadow: 0 0 30px #515151;
+    }  
     .saas-blog-mockup {
         @extend %card-small;
         background: #FFB900;
     }  
+    .saas-blog-mockup:hover {
+        box-shadow: 0 0 30px #515151;
+    }  
     .yelpcamp {
         @extend %card-small;
         background: #64D0C0;
+    }  
+    .yelpcamp:hover {
+        box-shadow: 0 0 30px #515151;
     }  
 }
 
@@ -132,6 +163,7 @@ Views:
         h1 {
             margin: 50vh 0 0 10%;
             font-size: 2.5em;
+            text-shadow: 2px 2px 1px #555;
         }
         .social-contacts-header {
             width: 50%;

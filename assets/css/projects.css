@@ -69,6 +69,15 @@ footer {
     justify-content: space-evenly; }
     footer .social-contacts a img {
       width: 40px; }
+    footer .social-contacts a :hover {
+      filter: grayscale(100%);
+      transition: 1s ease; }
+    footer .social-contacts a .img-github:hover {
+      filter: invert(50%);
+      transition: 1s ease; }
+    footer .social-contacts a .img-medium:hover {
+      filter: invert(100%);
+      transition: 1s ease; }
   footer .fine-print {
     text-align: center;
     font-size: 0.9em;
@@ -202,7 +211,7 @@ header {
     header .logo span:hover {
       background-color: #000;
       color: #FFF;
-      transition: 0.3s; }
+      transition: 0.5s ease; }
   header .menu-toggle {
     position: fixed;
     top: 0;
@@ -212,7 +221,7 @@ header {
     font-size: 1em;
     color: #333; }
     header .menu-toggle span:hover {
-      transition: 0.3s;
+      transition: 0.5s ease;
       color: gray; }
   header .sr-only {
     position: absolute;
@@ -330,7 +339,8 @@ header {
               width: 30px;
               filter: grayscale(100%); }
             header .main-menu ul .social-contacts a :hover {
-              filter: grayscale(0%); } }
+              filter: grayscale(0%);
+              transition: 2s ease; } }
 /************ end Nav Bar - Medium + Large Screen ************/
 /*
 Views:

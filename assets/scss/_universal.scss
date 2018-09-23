@@ -83,6 +83,18 @@ footer {
             img {
             width: 40px;
             }
+            :hover {
+                filter: grayscale(100%);
+                transition: 1s ease;
+            }
+            .img-github:hover {
+                filter: invert(50%);
+                transition: 1s ease;
+            }
+            .img-medium:hover {
+                filter: invert(100%);
+                transition: 1s ease;
+            }
         }
     }
     .fine-print {
