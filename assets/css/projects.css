@@ -66,7 +66,8 @@ footer {
   footer .social-contacts {
     padding: 20px 0;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    max-width: 400px; }
     footer .social-contacts a img {
       width: 40px; }
     footer .social-contacts a :hover {
@@ -93,12 +94,7 @@ footer {
 
   /************ Footer / Contacts - Medium Screen ************/
   footer .social-contacts {
-    width: 70%;
-    margin: 0 auto; } }
-@media (min-width: 900px) {
-  /************ Footer / Contacts - Large Screen ************/
-  footer .social-contacts {
-    width: 50%; } }
+    justify-content: space-between; } }
 header {
   animation-name: nav-fade-in;
   animation-duration: 3s;

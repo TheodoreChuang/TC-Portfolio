@@ -78,6 +78,7 @@ footer {
         padding: 20px 0;
         display: flex;
         justify-content: space-evenly;
+        max-width: 400px;
         
         a {
             img {
@@ -120,8 +121,7 @@ footer {
 /************ Footer / Contacts - Medium Screen ************/
 footer {
     .social-contacts {
-        width: 70%;
-        margin: 0 auto;
+        justify-content: space-between;
     }
 }
 
@@ -133,13 +133,6 @@ footer {
 
 @media (min-width: 900px) {
    
-/************ Footer / Contacts - Large Screen ************/
-footer {
-    .social-contacts {
-        width: 50%;
-    }
-}
-
 }
 /////////////////* end Large Styles *//////////////////
     
