@@ -344,6 +344,7 @@ Views:
     Medium < 900px
     Large 900-1600px;
 */
+/*                   Small Styles                    */
 /************ WELCOME - Small Screen ************/
 .hero-image {
   height: 100vh;
@@ -382,6 +383,13 @@ Views:
 /************ ABOUT ME - Small Screen ************/
 .about {
   margin: 7%; }
+  .about .tech-stack {
+    display: flex;
+    justify-content: space-evenly; }
+    .about .tech-stack img {
+      width: 10%;
+      height: 10%;
+      padding: 2%; }
   .about .profile-picture-small {
     display: block;
     padding: 0 5%;
@@ -390,13 +398,6 @@ Views:
     max-height: 400px; }
   .about .profile-picture-large {
     display: none; }
-  .about .tech-stack {
-    display: flex;
-    justify-content: space-evenly; }
-    .about .tech-stack img {
-      width: 10%;
-      height: 10%;
-      padding: 2%; }
 
 /************ Project Gallery - Small Screen - Flexbox ************/
 .project-gallery {
@@ -441,6 +442,7 @@ Views:
   .project-gallery .terminal-app:hover {
     box-shadow: 0 0 30px #515151; }
 
+/*                   Medium Styles                   */
 @media (min-width: 700px) {
   /************ WELCOME - Medium Screen ************/
   .hero-image .hero-text h1 {
@@ -507,6 +509,7 @@ Views:
       .project-gallery .devMarket .project-roles, .project-gallery .githubStats .project-roles, .project-gallery .terminal-app .project-roles {
         grid-area: left-bottom;
         align-self: end; } }
+/*                   Large Styles                    */
 @media (min-width: 900px) {
   /************ WELCOME - Large Screen ************/
   .hero-image .hero-text h1 {
