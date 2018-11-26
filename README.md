@@ -23,6 +23,9 @@ The website features simple, minimalistic design reflective of Theodore's person
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-menu-v1-min.png?raw=true" alt="screenshot of mobile view menu"/>
 </p>
 <p align="center">
+  <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-project-v1-min.png?raw=true"/>
+</p>
+<p align="center">
   <img src="https://github.com/TheodoreChuang/TC-Portfolio/blob/master/docs/portfolio-screenshots/portfolio-small-footer-v1-min.png?raw=true" alt="screenshot of mobile view footer"/>
 </p>
 
