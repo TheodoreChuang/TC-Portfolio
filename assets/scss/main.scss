@@ -9,7 +9,8 @@ Views:
 */
 
 ///////////////////////////////////////////////////////
-///////////////////* Small Styles  *///////////////////
+/*                   Small Styles                    */
+///////////////////////////////////////////////////////
 
 /************ WELCOME - Small Screen ************/
 .hero-image {
@@ -65,16 +66,6 @@ Views:
 .about {
     margin: 7%;
 
-    .profile-picture-small  {
-        display: block;
-        padding: 0 5%;
-        margin: 0 auto;
-        max-width: 90%;
-        max-height: 400px;
-    }
-    .profile-picture-large {
-        display: none;
-    }
     .tech-stack {
         display: flex;
         justify-content: space-evenly;
@@ -85,7 +76,16 @@ Views:
             padding: 2%;
         }
     }
-
+    .profile-picture-small  {
+        display: block;
+        padding: 0 5%;
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 400px;
+    }
+    .profile-picture-large {
+        display: none;
+    }
 }
 
 /************ Project Gallery - Small Screen - Flexbox ************/
@@ -124,6 +124,20 @@ Views:
             }
     }
 
+    .devMarket {
+        @extend %card-small;
+        background: #4169E1;
+    }  
+    .devMarket:hover {
+        box-shadow: 0 0 30px #515151;
+    }  
+    .githubStats {
+        @extend %card-small;
+        background: #64D0C0;
+    }  
+    .githubStats:hover {
+        box-shadow: 0 0 30px #515151;
+    }  
     .terminal-app {
         @extend %card-small;
         background: #1AA03A;
@@ -134,27 +148,14 @@ Views:
     .terminal-app:hover {
         box-shadow: 0 0 30px #515151;
     }  
-    .saas-blog-mockup {
-        @extend %card-small;
-        background: #FFB900;
-    }  
-    .saas-blog-mockup:hover {
-        box-shadow: 0 0 30px #515151;
-    }  
-    .yelpcamp {
-        @extend %card-small;
-        background: #64D0C0;
-    }  
-    .yelpcamp:hover {
-        box-shadow: 0 0 30px #515151;
-    }  
 }
 
 ////////////////* end - Small Styles  */////////////////
 
 
 ///////////////////////////////////////////////////////
-///////////////////* Medium Styles *////////////////////
+/*                   Medium Styles                   */
+///////////////////////////////////////////////////////
 
 @media (min-width: 700px) {
 /************ WELCOME - Medium Screen ************/
@@ -248,14 +249,14 @@ Views:
                 align-self: end;
             }
     }
-
-    .terminal-app {
-        @extend %card-medium;
-    }      
-    .saas-blog-mockup {
+    
+    .devMarket {
         @extend %card-medium;
     }  
-    .yelpcamp {
+    .githubStats {
+        @extend %card-medium;
+    }  
+    .terminal-app {
         @extend %card-medium;
     }  
 }
@@ -264,7 +265,8 @@ Views:
 /////////////////* end Medium Styles *///////////////
 
 ///////////////////////////////////////////////////////
-///////////////////* Large Styles *////////////////////
+/*                   Large Styles                    */
+///////////////////////////////////////////////////////
 
 @media (min-width: 900px) {
 /************ WELCOME - Large Screen ************/
@@ -298,15 +300,15 @@ Views:
         }
     }
 
+    .devMarket {
+        @extend %card-large;
+    }  
+    .githubStats {
+        @extend %card-large;
+    }  
     .terminal-app {
         @extend %card-large;
     }      
-    .saas-blog-mockup {
-        @extend %card-large;
-    }  
-    .yelpcamp {
-        @extend %card-large;
-    }  
 }
 
 }

@@ -27,7 +27,7 @@ h3 {
 p, li {
   line-height: 1.3em; }
 
-a, a:visited {
+a, a:visited, a:hover {
   text-decoration: none;
   color: black; }
 
@@ -401,7 +401,7 @@ Views:
 /************ Project Gallery - Small Screen - Flexbox ************/
 .project-gallery {
   margin: 7%; }
-  .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+  .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
     margin-bottom: 7%;
     height: 55vh;
     padding: 10% 5%;
@@ -413,32 +413,32 @@ Views:
     transition: box-shadow 1s;
     border: 1px solid #eee; }
     @supports (scroll-snap-align: center) {
-      .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+      .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
         scroll-snap-align: center; } }
-    .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
+    .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
       margin: 0; }
-    .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
+    .project-gallery .devMarket .project-snippet, .project-gallery .githubStats .project-snippet, .project-gallery .terminal-app .project-snippet {
       margin: 0;
       padding: 1% 0 5% 0;
       font-size: 0.9em; }
-    .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
+    .project-gallery .devMarket img, .project-gallery .githubStats img, .project-gallery .terminal-app img {
       padding-left: 5%;
       width: 90%; }
-    .project-gallery .terminal-app .project-roles, .project-gallery .saas-blog-mockup .project-roles, .project-gallery .yelpcamp .project-roles {
+    .project-gallery .devMarket .project-roles, .project-gallery .githubStats .project-roles, .project-gallery .terminal-app .project-roles {
       font-size: 0.85em; }
+  .project-gallery .devMarket {
+    background: #4169E1; }
+  .project-gallery .devMarket:hover {
+    box-shadow: 0 0 30px #515151; }
+  .project-gallery .githubStats {
+    background: #64D0C0; }
+  .project-gallery .githubStats:hover {
+    box-shadow: 0 0 30px #515151; }
   .project-gallery .terminal-app {
     background: #1AA03A; }
     .project-gallery .terminal-app .project-roles {
       bottom: 0; }
   .project-gallery .terminal-app:hover {
-    box-shadow: 0 0 30px #515151; }
-  .project-gallery .saas-blog-mockup {
-    background: #FFB900; }
-  .project-gallery .saas-blog-mockup:hover {
-    box-shadow: 0 0 30px #515151; }
-  .project-gallery .yelpcamp {
-    background: #64D0C0; }
-  .project-gallery .yelpcamp:hover {
     box-shadow: 0 0 30px #515151; }
 
 @media (min-width: 700px) {
@@ -480,22 +480,22 @@ Views:
       position: relative;
       margin-left: 7%;
       top: 5vh; }
-    .project-gallery .terminal-app, .project-gallery .saas-blog-mockup, .project-gallery .yelpcamp {
+    .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
       padding-bottom: 5%;
       display: grid;
       grid-template-columns: 30% 70%;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "left-top right" "left-middle right" "left-bottom right";
       grid-column-gap: 20px; }
-      .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
+      .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
         grid-area: left-top;
         align-self: end;
         font-size: 1.5em; }
-      .project-gallery .terminal-app .project-snippet, .project-gallery .saas-blog-mockup .project-snippet, .project-gallery .yelpcamp .project-snippet {
+      .project-gallery .devMarket .project-snippet, .project-gallery .githubStats .project-snippet, .project-gallery .terminal-app .project-snippet {
         grid-area: left-middle;
         font-size: 1em;
         padding: 0%; }
-      .project-gallery .terminal-app img, .project-gallery .saas-blog-mockup img, .project-gallery .yelpcamp img {
+      .project-gallery .devMarket img, .project-gallery .githubStats img, .project-gallery .terminal-app img {
         grid-area: right;
         justify-self: end;
         align-self: center;
@@ -504,7 +504,7 @@ Views:
         max-height: 100%;
         width: auto;
         height: auto; }
-      .project-gallery .terminal-app .project-roles, .project-gallery .saas-blog-mockup .project-roles, .project-gallery .yelpcamp .project-roles {
+      .project-gallery .devMarket .project-roles, .project-gallery .githubStats .project-roles, .project-gallery .terminal-app .project-roles {
         grid-area: left-bottom;
         align-self: end; } }
 @media (min-width: 900px) {
@@ -520,7 +520,7 @@ Views:
   /************ Project Gallery - Large Screen - Grid  ************/
   .project-gallery h3 {
     top: 7vh; }
-  .project-gallery .terminal-app .project-title, .project-gallery .saas-blog-mockup .project-title, .project-gallery .yelpcamp .project-title {
+  .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
     font-size: 2.5em; } }
 
 /*# sourceMappingURL=main.css.map */
