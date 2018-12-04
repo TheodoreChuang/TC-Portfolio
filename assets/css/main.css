@@ -60,6 +60,44 @@ a, a:visited, a:hover {
   background: #555;
   transform: skew(0deg, -25deg); }
 
+.tooltip {
+  /* Container for our tooltip */
+  position: relative;
+  display: inline-block;
+  cursor: grab; }
+
+.tooltiptext {
+  /* This is for the tooltip text */
+  visibility: hidden;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s; }
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  /* Makes tooltip text visible when text is hovered on */
+  visibility: visible;
+  opacity: 1; }
+
 /************ Footer / Contacts - Small Screen ************/
 footer {
   margin: 7%; }
@@ -167,13 +205,13 @@ a.anchor {
   a[name*="terminal-app"] {
     display: block;
     position: relative;
-    top: 3vh;
+    top: -10vh;
     visibility: hidden; } }
 @media (min-width: 900px) {
   a[name*="about"] {
     display: block;
     position: relative;
-    top: -20vh;
+    top: -10vh;
     visibility: hidden; } }
 /************ Nav Bar - Small Screen ************/
 header {
@@ -350,7 +388,7 @@ Views:
   height: 100vh;
   margin: 0%;
   padding: 1%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white), url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8b0ca61fa643ce14689caf7a5bd84d& auto=format&fit=crop&w=1051&q=80");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white), url("https://github.com/TheodoreChuang/TC-Portfolio/tree/master/assets/images/main-hero-image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -359,8 +397,7 @@ Views:
     margin: 40vh 0 0 10%;
     font-size: 1.5em;
     text-shadow: 1px 1px #555; }
-  .hero-image .hero-text h2 {
-    opacity: 0;
+  .hero-image .hero-text .terminal {
     margin: 1% 10% 0 11%;
     font-size: 1em; }
   .hero-image .hero-text .social-contacts-header {
@@ -386,9 +423,8 @@ Views:
   .about .tech-stack {
     display: flex;
     justify-content: space-evenly; }
-    .about .tech-stack img {
-      width: 10%;
-      height: 10%;
+    .about .tech-stack i {
+      font-size: 4rem;
       padding: 2%; }
   .about .profile-picture-small {
     display: block;
@@ -432,11 +468,11 @@ Views:
   .project-gallery .devMarket:hover {
     box-shadow: 0 0 30px #515151; }
   .project-gallery .githubStats {
-    background: #64D0C0; }
+    background: #1AA03A; }
   .project-gallery .githubStats:hover {
     box-shadow: 0 0 30px #515151; }
   .project-gallery .terminal-app {
-    background: #1AA03A; }
+    background: #AF403A; }
     .project-gallery .terminal-app .project-roles {
       bottom: 0; }
   .project-gallery .terminal-app:hover {

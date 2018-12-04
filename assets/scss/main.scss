@@ -18,7 +18,7 @@ Views:
     margin: 0%;
     padding: 1%;
     // TODO: change to own photos; photo transitions/animations
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)) ,url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8b0ca61fa643ce14689caf7a5bd84d& auto=format&fit=crop&w=1051&q=80");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)) ,url("https://github.com/TheodoreChuang/TC-Portfolio/tree/master/assets/images/main-hero-image.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,8 +30,7 @@ Views:
             font-size: 1.5em;
             text-shadow: 1px 1px #555;
         }
-        h2 {
-            opacity: 0;
+        .terminal {
             margin: 1% 10% 0 11%;
             font-size: 1em;
         }    
@@ -70,9 +69,14 @@ Views:
         display: flex;
         justify-content: space-evenly;
         
-        img {
-            width: 10%;
-            height: 10%;
+        // img {
+        //     width: 10%;
+        //     height: 10%;
+        //     padding: 2%;
+        // }
+
+        i {
+            font-size: 4rem;
             padding: 2%;
         }
     }
@@ -133,14 +137,15 @@ Views:
     }  
     .githubStats {
         @extend %card-small;
-        background: #64D0C0;
+        background: #1AA03A;
+        // background: #AF403A;
     }  
     .githubStats:hover {
         box-shadow: 0 0 30px #515151;
     }  
     .terminal-app {
         @extend %card-small;
-        background: #1AA03A;
+        background: #AF403A;
         .project-roles {
             bottom: 0; // manual override due to greater image height
         }
