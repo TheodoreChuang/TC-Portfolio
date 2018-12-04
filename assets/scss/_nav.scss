@@ -9,7 +9,7 @@ a.anchor {
     a[name*="terminal-app"] {
         display: block;
         position: relative;
-        top: 3vh;
+        top: -10vh;
         visibility: hidden;
     }
 }
@@ -17,7 +17,7 @@ a.anchor {
     a[name*="about"] {
         display: block;
         position: relative;
-        top: -20vh;
+        top: -10vh;
         visibility: hidden;
     }
 }

@@ -167,13 +167,13 @@ a.anchor {
   a[name*="terminal-app"] {
     display: block;
     position: relative;
-    top: 3vh;
+    top: -10vh;
     visibility: hidden; } }
 @media (min-width: 900px) {
   a[name*="about"] {
     display: block;
     position: relative;
-    top: -20vh;
+    top: -10vh;
     visibility: hidden; } }
 /************ Nav Bar - Small Screen ************/
 header {
@@ -350,7 +350,7 @@ Views:
   height: 100vh;
   margin: 0%;
   padding: 1%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white), url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8b0ca61fa643ce14689caf7a5bd84d& auto=format&fit=crop&w=1051&q=80");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white), url("https://github.com/TheodoreChuang/TC-Portfolio/tree/master/assets/images/main-hero-image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -359,8 +359,7 @@ Views:
     margin: 40vh 0 0 10%;
     font-size: 1.5em;
     text-shadow: 1px 1px #555; }
-  .hero-image .hero-text h2 {
-    opacity: 0;
+  .hero-image .hero-text .terminal {
     margin: 1% 10% 0 11%;
     font-size: 1em; }
   .hero-image .hero-text .social-contacts-header {
@@ -386,9 +385,8 @@ Views:
   .about .tech-stack {
     display: flex;
     justify-content: space-evenly; }
-    .about .tech-stack img {
-      width: 10%;
-      height: 10%;
+    .about .tech-stack i {
+      font-size: 4rem;
       padding: 2%; }
   .about .profile-picture-small {
     display: block;
