@@ -60,6 +60,44 @@ a, a:visited, a:hover {
   background: #555;
   transform: skew(0deg, -25deg); }
 
+.tooltip {
+  /* Container for our tooltip */
+  position: relative;
+  display: inline-block;
+  cursor: grab; }
+
+.tooltiptext {
+  /* This is for the tooltip text */
+  visibility: hidden;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s; }
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  /* Makes tooltip text visible when text is hovered on */
+  visibility: visible;
+  opacity: 1; }
+
 /************ Footer / Contacts - Small Screen ************/
 footer {
   margin: 7%; }
@@ -430,11 +468,11 @@ Views:
   .project-gallery .devMarket:hover {
     box-shadow: 0 0 30px #515151; }
   .project-gallery .githubStats {
-    background: #64D0C0; }
+    background: #1AA03A; }
   .project-gallery .githubStats:hover {
     box-shadow: 0 0 30px #515151; }
   .project-gallery .terminal-app {
-    background: #1AA03A; }
+    background: #AF403A; }
     .project-gallery .terminal-app .project-roles {
       bottom: 0; }
   .project-gallery .terminal-app:hover {

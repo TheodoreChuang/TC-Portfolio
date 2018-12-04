@@ -137,14 +137,15 @@ Views:
     }  
     .githubStats {
         @extend %card-small;
-        background: #64D0C0;
+        background: #1AA03A;
+        // background: #AF403A;
     }  
     .githubStats:hover {
         box-shadow: 0 0 30px #515151;
     }  
     .terminal-app {
         @extend %card-small;
-        background: #1AA03A;
+        background: #AF403A;
         .project-roles {
             bottom: 0; // manual override due to greater image height
         }
