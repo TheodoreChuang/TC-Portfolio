@@ -10,24 +10,26 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   @supports (scroll-snap-type: y proximity) {
     body {
       scroll-snap-type: y proximity; } }
 
 h3 {
   margin: 0 0 1em 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 0.9em;
   text-transform: uppercase;
   color: gray; }
 
-p, li {
+p,
+li {
   line-height: 1.3em; }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
   color: black; }
 
@@ -41,7 +43,7 @@ a, a:visited, a:hover {
   width: 10%; }
 
 .chevron:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -51,7 +53,7 @@ a, a:visited, a:hover {
   transform: skew(0deg, 25deg); }
 
 .chevron:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -120,7 +122,7 @@ footer {
   footer .fine-print {
     text-align: center;
     font-size: 0.9em;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     color: gray; }
 
 @media (min-width: 700px) {
@@ -437,45 +439,41 @@ Views:
 
 /************ Project Gallery - Small Screen - Flexbox ************/
 .project-gallery {
-  margin: 7%; }
-  .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
+  padding: 7%;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .project-gallery .project-card {
     margin-bottom: 7%;
-    height: 55vh;
+    height: 60vh;
     padding: 10% 5%;
     display: flex;
     flex-direction: column;
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 15px;
     box-shadow: 0;
     transition: box-shadow 1s;
     border: 1px solid #eee; }
     @supports (scroll-snap-align: center) {
-      .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
+      .project-gallery .project-card {
         scroll-snap-align: center; } }
-    .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
-      margin: 0; }
-    .project-gallery .devMarket .project-snippet, .project-gallery .githubStats .project-snippet, .project-gallery .terminal-app .project-snippet {
+    .project-gallery .project-card .project-title {
+      margin: 0;
+      color: gray; }
+    .project-gallery .project-card .project-snippet {
       margin: 0;
       padding: 1% 0 5% 0;
-      font-size: 0.9em; }
-    .project-gallery .devMarket img, .project-gallery .githubStats img, .project-gallery .terminal-app img {
+      font-size: 0.9em;
+      color: gray; }
+    .project-gallery .project-card img {
       padding-left: 5%;
       width: 90%; }
-    .project-gallery .devMarket .project-roles, .project-gallery .githubStats .project-roles, .project-gallery .terminal-app .project-roles {
-      font-size: 0.85em; }
-  .project-gallery .devMarket {
-    background: #4169E1; }
-  .project-gallery .devMarket:hover {
-    box-shadow: 0 0 30px #515151; }
-  .project-gallery .githubStats {
-    background: #1AA03A; }
-  .project-gallery .githubStats:hover {
-    box-shadow: 0 0 30px #515151; }
-  .project-gallery .terminal-app {
-    background: #AF403A; }
-    .project-gallery .terminal-app .project-roles {
-      bottom: 0; }
-  .project-gallery .terminal-app:hover {
+    .project-gallery .project-card .project-roles {
+      font-size: 0.85em;
+      color: gray; }
+  .project-gallery .project-card {
+    background: #fff; }
+  .project-gallery .project-card:hover {
     box-shadow: 0 0 30px #515151; }
 
 /*                   Medium Styles                   */
@@ -518,22 +516,22 @@ Views:
       position: relative;
       margin-left: 7%;
       top: 5vh; }
-    .project-gallery .devMarket, .project-gallery .githubStats, .project-gallery .terminal-app {
+    .project-gallery .project-card {
       padding-bottom: 5%;
       display: grid;
       grid-template-columns: 30% 70%;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "left-top right" "left-middle right" "left-bottom right";
       grid-column-gap: 20px; }
-      .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
+      .project-gallery .project-card .project-title {
         grid-area: left-top;
         align-self: end;
         font-size: 1.5em; }
-      .project-gallery .devMarket .project-snippet, .project-gallery .githubStats .project-snippet, .project-gallery .terminal-app .project-snippet {
+      .project-gallery .project-card .project-snippet {
         grid-area: left-middle;
         font-size: 1em;
         padding: 0%; }
-      .project-gallery .devMarket img, .project-gallery .githubStats img, .project-gallery .terminal-app img {
+      .project-gallery .project-card img {
         grid-area: right;
         justify-self: end;
         align-self: center;
@@ -542,7 +540,7 @@ Views:
         max-height: 100%;
         width: auto;
         height: auto; }
-      .project-gallery .devMarket .project-roles, .project-gallery .githubStats .project-roles, .project-gallery .terminal-app .project-roles {
+      .project-gallery .project-card .project-roles {
         grid-area: left-bottom;
         align-self: end; } }
 /*                   Large Styles                    */
@@ -559,7 +557,7 @@ Views:
   /************ Project Gallery - Large Screen - Grid  ************/
   .project-gallery h3 {
     top: 7vh; }
-  .project-gallery .devMarket .project-title, .project-gallery .githubStats .project-title, .project-gallery .terminal-app .project-title {
+  .project-gallery .project-card .project-title {
     font-size: 2.5em; } }
 
 /*# sourceMappingURL=main.css.map */
